@@ -1,4 +1,4 @@
-papyrus is an epaper based monitor
+papyrus is an epaper based monitor.
 
 switches
 on/off
