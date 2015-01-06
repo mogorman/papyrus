@@ -35,7 +35,8 @@ if [ "$New_papyrus" == "0" ]; then
     echo "No changes to papyrus don't bother saving image."
 else
     copy_files board.png ~/artifacts/papyrus/board.png
-    cp *.zip gerbers.zip
+    File=`ls *.zip|grep -v oshw`
+    cp "${File}" gerbers.zip
     copy_files gerbers.zip ~/artifacts/papyrus/gerbers.zip
 fi
 
