@@ -31,16 +31,16 @@ fi
 New_papyrus=`git diff HEAD^ HEAD -- papyrus.pcb|wc -l`
 New_schematic=`git diff HEAD^ HEAD -- papyrus.sch|wc -l`
 
-if [ "$New_papyrus" == "0" ]; then
-    echo "No changes to papyrus don't bother saving image."
-else
+#if [ "$New_papyrus" == "0" ]; then
+#    echo "No changes to papyrus don't bother saving image."
+#else
     copy_files board.png ~/artifacts/papyrus/board.png
     cp *.zip gerbers.zip
     copy_files gerbers.zip ~/artifacts/papyrus/gerbers.zip
-fi
-
-if [ "$New_schematic" == "0" ]; then
-    echo "No changes to schematic don't bother saving the image."
-else
+#fi
+#
+#if [ "$New_schematic" == "0" ]; then
+#    echo "No changes to schematic don't bother saving the image."
+#else
     copy_files schematic.png ~/artifacts/papyrus/schematic.png
-fi
+#fi
