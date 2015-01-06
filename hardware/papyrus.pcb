@@ -1700,6 +1700,7 @@ Layer(3 "outline")
 	Line[2250.00mil 400.00mil 2250.00mil 3450.00mil 10.00mil 20.00mil "clearline"]
 	Line[2250.00mil 3450.00mil 700.00mil 3450.00mil 10.00mil 20.00mil "clearline"]
 	Line[700.00mil 3450.00mil 700.00mil 400.00mil 10.00mil 20.00mil "clearline"]
+	Line[2250.00mil 400.00mil 700.00mil 400.00mil 10.00mil 20.00mil "clearline"]
 )
 Layer(4 "GND")
 (
@@ -1721,11 +1722,10 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
-	Line[700.00mil 400.00mil 2250.00mil 400.00mil 10.00mil 20.00mil "clearline"]
 	Text[750.00mil 450.00mil 0 100 "Papyrus" "clearline"]
 	Text[1050.00mil 450.00mil 0 100 "@v@" "clearline"]
 	Text[750.00mil 700.00mil 0 100 "@git@" "clearline"]
-	Text[1700.00mil 450.00mil 0 100 "@hackvana_c@" "clearline,selected"]
+	Text[1700.00mil 450.00mil 0 100 "@hackvana_c@" "clearline"]
 )
 NetList()
 (
