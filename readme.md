@@ -19,4 +19,3 @@ sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript 
 [![build status](http://ci.meatstand.com/projects/2/status.png?ref=master)](http://ci.meatstand.com/projects/2?ref=master)
 
 
-[Old tarballs](http://artifacts.meatstand.com/papyrus/old_papyrus)
