@@ -1693,6 +1693,123 @@ Element["" "0805" "C3" "4.7uF" 1850.00mil 2150.00mil -154.69mil -23.31mil 0 100 
 	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
 
 	)
+
+Element["" "SOD323" "D1" "unknown" 1450.00mil 1900.00mil 93.00mil 0.0000 3 100 ""]
+(
+	Pad[-37.00mil -10.00mil -37.00mil 10.00mil 51.00mil 20.00mil 57.00mil "1" "1" "square"]
+	Pad[37.00mil -10.00mil 37.00mil 10.00mil 51.00mil 20.00mil 57.00mil "2" "2" "square"]
+	ElementLine [-83.00mil -35.00mil -83.00mil 35.00mil 20.00mil]
+	ElementLine [-83.00mil 35.00mil -58.00mil 45.00mil 10.00mil]
+	ElementLine [-58.00mil 45.00mil 73.00mil 45.00mil 10.00mil]
+	ElementLine [73.00mil 45.00mil 73.00mil -45.00mil 10.00mil]
+	ElementLine [73.00mil -45.00mil -58.00mil -45.00mil 10.00mil]
+	ElementLine [-58.00mil -45.00mil -83.00mil -35.00mil 10.00mil]
+
+	)
+
+Element["" "SOT23" "Q1" "unknown" 1800.00mil 1900.00mil -25.00mil -110.00mil 3 100 ""]
+(
+	Pad[0.0000 -3.00mil 0.0000 3.00mil 34.00mil 30.00mil 40.00mil "1" "1" "square,edge2"]
+	Pad[78.00mil -3.00mil 78.00mil 3.00mil 34.00mil 30.00mil 40.00mil "2" "2" "square,edge2"]
+	Pad[39.00mil -85.00mil 39.00mil -79.00mil 34.00mil 30.00mil 40.00mil "3" "3" "square"]
+	ElementLine [-25.00mil -110.00mil -25.00mil 29.00mil 10.00mil]
+	ElementLine [-25.00mil 29.00mil 103.00mil 29.00mil 10.00mil]
+	ElementLine [103.00mil 29.00mil 103.00mil -110.00mil 10.00mil]
+	ElementLine [103.00mil -110.00mil -25.00mil -110.00mil 10.00mil]
+
+	)
+Rat[924.00mil 64.0149mm 1 924.00mil 69.0949mm 1  ""]
+Rat[924.00mil 69.0949mm 1 52.7167mm 69.0621mm 1  ""]
+Rat[41.4698mm 15.7999mm 0 924.00mil 61.4749mm 1  ""]
+Rat[42.9700mm 12.5000mm 0 924.00mil 66.5549mm 1  ""]
+Rat[33.0698mm 15.7999mm 0 52.7167mm 53.8221mm 1  ""]
+Rat[35.1699mm 12.5000mm 0 52.7167mm 25.8821mm 1  ""]
+Rat[35.4698mm 15.7999mm 0 52.7167mm 28.4221mm 1  ""]
+Rat[35.7698mm 12.5000mm 0 52.7167mm 30.9621mm 1  ""]
+Rat[36.0698mm 15.7999mm 0 52.7167mm 33.5021mm 1  ""]
+Rat[36.3700mm 12.5000mm 0 52.7167mm 36.0421mm 1  ""]
+Rat[36.6700mm 15.7999mm 0 52.7167mm 38.5821mm 1  ""]
+Rat[36.9700mm 12.5000mm 0 52.7167mm 41.1221mm 1  ""]
+Rat[37.2699mm 15.7999mm 0 52.7167mm 43.6621mm 1  ""]
+Rat[32.7698mm 12.5000mm 0 40.5699mm 12.5000mm 0  ""]
+Rat[40.5699mm 12.5000mm 0 42.3700mm 12.5000mm 0  ""]
+Rat[42.3700mm 12.5000mm 0 42.0698mm 15.7999mm 0  ""]
+Rat[42.0698mm 15.7999mm 0 52.7167mm 58.9021mm 1  ""]
+Rat[924.00mil 43.6949mm 1 924.00mil 48.7749mm 1  ""]
+Rat[924.00mil 48.7749mm 1 52.7167mm 56.3621mm 1  ""]
+Rat[39.6700mm 15.7999mm 0 924.00mil 41.1549mm 1  ""]
+Rat[39.9700mm 12.5000mm 0 924.00mil 46.2349mm 1  ""]
+Rat[30.8501mm 62.1302mm 0 32.6499mm 69.7502mm 0  ""]
+Rat[32.6499mm 69.7502mm 0 40.2699mm 69.7502mm 0  ""]
+Rat[40.2699mm 69.7502mm 0 40.2699mm 65.9402mm 0  ""]
+Rat[40.2699mm 65.9402mm 0 40.2699mm 62.1302mm 0  ""]
+Rat[40.2699mm 69.7502mm 0 40.2699mm 73.5602mm 0  ""]
+Rat[40.2699mm 69.7502mm 0 46.0901mm 69.7502mm 0  ""]
+Rat[46.0901mm 69.7502mm 0 47.8899mm 73.5602mm 0  ""]
+Rat[47.8899mm 73.5602mm 0 52.7167mm 74.1421mm 1  ""]
+Rat[40.2699mm 62.1302mm 0 47.8899mm 62.1302mm 0  ""]
+Rat[47.8899mm 62.1302mm 0 47.8899mm 54.5102mm 0  ""]
+Rat[32.6499mm 69.7502mm 0 924.00mil 74.1749mm 1  ""]
+Rat[47.8899mm 54.5102mm 0 1585.00mil 1675.00mil 0  ""]
+Rat[1585.00mil 1675.00mil 0 1585.00mil 1125.00mil 0  ""]
+Rat[1585.00mil 1125.00mil 0 1585.00mil 1075.00mil 0  ""]
+Rat[1585.00mil 1075.00mil 0 1450.00mil 23.2100mm 0  ""]
+Rat[1450.00mil 23.2100mm 0 1315.00mil 1075.00mil 0  ""]
+Rat[1315.00mil 1075.00mil 0 1315.00mil 1125.00mil 0  ""]
+Rat[1450.00mil 23.2100mm 0 40.2699mm 15.7999mm 0  ""]
+Rat[40.2699mm 15.7999mm 0 40.8699mm 15.7999mm 0  ""]
+Rat[40.2699mm 15.7999mm 0 33.9700mm 12.5000mm 0  ""]
+Rat[33.9700mm 12.5000mm 0 32.4698mm 15.7999mm 0  ""]
+Rat[38.4701mm 65.9402mm 0 32.6499mm 65.9402mm 0  ""]
+Rat[32.6499mm 65.9402mm 0 924.00mil 33.5349mm 1  ""]
+Rat[924.00mil 33.5349mm 1 1585.00mil 1025.00mil 0  ""]
+Rat[1585.00mil 1025.00mil 0 38.4500mm 21.8600mm 0  ""]
+Rat[38.4500mm 21.8600mm 0 38.4698mm 15.7999mm 0  ""]
+Rat[46.0901mm 54.5102mm 0 46.0901mm 65.9402mm 0  ""]
+Rat[46.0901mm 54.5102mm 0 1413.00mil 1890.00mil 0  ""]
+Rat[1413.00mil 1890.00mil 0 1315.00mil 1625.00mil 0  ""]
+Rat[1315.00mil 1625.00mil 0 1315.00mil 1575.00mil 0  ""]
+Rat[1315.00mil 1625.00mil 0 1585.00mil 1625.00mil 0  ""]
+Rat[1585.00mil 1625.00mil 0 1585.00mil 1575.00mil 0  ""]
+Rat[1315.00mil 1575.00mil 0 924.00mil 36.0749mm 1  ""]
+Rat[1585.00mil 1575.00mil 0 38.7698mm 12.5000mm 0  ""]
+Rat[33.3700mm 12.5000mm 0 52.7167mm 51.2821mm 1  ""]
+Rat[33.6700mm 15.7999mm 0 52.7167mm 48.7421mm 1  ""]
+Rat[52.7167mm 71.6021mm 1 47.8899mm 58.3202mm 0  ""]
+Rat[34.8699mm 15.7999mm 0 52.7167mm 46.2021mm 1  ""]
+Rat[924.00mil 53.8549mm 1 924.00mil 58.9349mm 1  ""]
+Rat[924.00mil 58.9349mm 1 52.7167mm 66.5221mm 1  ""]
+Rat[41.1699mm 12.5000mm 0 924.00mil 51.3149mm 1  ""]
+Rat[42.6700mm 15.7999mm 0 924.00mil 56.3949mm 1  ""]
+Rat[32.6499mm 62.1302mm 0 38.4500mm 900.00mil 0  ""]
+Rat[40.2699mm 58.3202mm 0 1487.00mil 1890.00mil 0  ""]
+Rat[1487.00mil 1890.00mil 0 38.4500mm 23.8600mm 0  ""]
+Rat[38.4701mm 58.3202mm 0 38.4500mm 919.69mil 0  ""]
+Rat[30.8501mm 65.9402mm 0 47.8899mm 69.7502mm 0  ""]
+Rat[30.8501mm 65.9402mm 0 35.1998mm 23.8600mm 0  ""]
+Rat[30.8501mm 58.3202mm 0 47.8899mm 65.9402mm 0  ""]
+Rat[30.8501mm 58.3202mm 0 35.1998mm 21.8600mm 0  ""]
+Rat[32.6499mm 58.3202mm 0 35.1998mm 880.32mil 0  ""]
+Rat[38.4701mm 69.7502mm 0 30.8501mm 69.7502mm 0  ""]
+Rat[38.4701mm 69.7502mm 0 1585.00mil 1275.00mil 0  ""]
+Rat[1585.00mil 1275.00mil 0 1315.00mil 1025.00mil 0  ""]
+Rat[1315.00mil 1025.00mil 0 924.00mil 30.9949mm 1  ""]
+Rat[1315.00mil 1025.00mil 0 32.1699mm 12.5000mm 0  ""]
+Rat[52.7167mm 61.4421mm 1 38.4701mm 62.1302mm 0  ""]
+Rat[38.4701mm 62.1302mm 0 35.1998mm 919.69mil 0  ""]
+Rat[46.0901mm 73.5602mm 0 38.4701mm 73.5602mm 0  ""]
+Rat[38.4701mm 73.5602mm 0 32.6499mm 73.5602mm 0  ""]
+Rat[32.6499mm 73.5602mm 0 1315.00mil 1525.00mil 0  ""]
+Rat[1315.00mil 1525.00mil 0 1315.00mil 1425.00mil 0  ""]
+Rat[1315.00mil 1425.00mil 0 924.00mil 28.4549mm 1  ""]
+Rat[924.00mil 28.4549mm 1 31.8699mm 15.7999mm 0  ""]
+Rat[52.7167mm 63.9821mm 1 46.0901mm 62.1302mm 0  ""]
+Rat[46.0901mm 62.1302mm 0 35.1998mm 900.00mil 0  ""]
+Rat[41.7698mm 12.5000mm 0 924.00mil 71.6349mm 1  ""]
+Rat[924.00mil 25.9149mm 1 46.0901mm 58.3202mm 0  ""]
+Rat[38.1699mm 12.5000mm 0 1315.00mil 1275.00mil 0  ""]
+Rat[1315.00mil 1275.00mil 0 1315.00mil 1325.00mil 0  ""]
+Rat[1315.00mil 1325.00mil 0 924.00mil 38.6149mm 1  ""]
 Layer(1 "component")
 (
 	Polygon("clearpoly,lock")
@@ -1746,235 +1863,229 @@ Layer(10 "silk")
 )
 NetList()
 (
-	Net("CKV" "(unknown)")
+	Net("unnamed_net9" "(unknown)")
 	(
-		Connect("J1-16")
-		Connect("J1-18")
-		Connect("J2-18")
-	)
-	Net("CKV1" "(unknown)")
-	(
-		Connect("CONN1-33")
-		Connect("J1-15")
-	)
-	Net("CKV2" "(unknown)")
-	(
-		Connect("CONN1-38")
-		Connect("J1-17")
-	)
-	Net("Clock" "(unknown)")
-	(
-		Connect("CONN1-5")
-		Connect("J2-12")
-	)
-	Net("D0" "(unknown)")
-	(
-		Connect("CONN1-12")
-		Connect("J2-1")
-	)
-	Net("D1" "(unknown)")
-	(
-		Connect("CONN1-13")
-		Connect("J2-2")
-	)
-	Net("D2" "(unknown)")
-	(
-		Connect("CONN1-14")
-		Connect("J2-3")
-	)
-	Net("D3" "(unknown)")
-	(
-		Connect("CONN1-15")
-		Connect("J2-4")
-	)
-	Net("D4" "(unknown)")
-	(
-		Connect("CONN1-16")
-		Connect("J2-5")
-	)
-	Net("D5" "(unknown)")
-	(
-		Connect("CONN1-17")
-		Connect("J2-6")
-	)
-	Net("D6" "(unknown)")
-	(
-		Connect("CONN1-18")
-		Connect("J2-7")
+		Connect("R11-1")
+		Connect("R10-1")
 	)
 	Net("D7" "(unknown)")
 	(
-		Connect("CONN1-19")
 		Connect("J2-8")
+		Connect("CONN1-19")
 	)
-	Net("EINKVDD" "(unknown)")
+	Net("D6" "(unknown)")
 	(
-		Connect("CONN1-4")
-		Connect("CONN1-30")
-		Connect("CONN1-35")
-		Connect("CONN1-36")
-		Connect("J2-14")
+		Connect("J2-7")
+		Connect("CONN1-18")
 	)
-	Net("Gmode" "(unknown)")
+	Net("D5" "(unknown)")
 	(
-		Connect("J1-8")
-		Connect("J1-10")
-		Connect("J2-13")
+		Connect("J2-6")
+		Connect("CONN1-17")
 	)
-	Net("Gmode1" "(unknown)")
+	Net("D4" "(unknown)")
 	(
-		Connect("CONN1-27")
-		Connect("J1-7")
+		Connect("J2-5")
+		Connect("CONN1-16")
 	)
-	Net("Gmode2" "(unknown)")
+	Net("D3" "(unknown)")
 	(
-		Connect("CONN1-28")
-		Connect("J1-9")
+		Connect("J2-4")
+		Connect("CONN1-15")
 	)
-	Net("GND" "(unknown)")
+	Net("D2" "(unknown)")
 	(
-		Connect("C1-1")
-		Connect("C3-2")
-		Connect("C4-2")
-		Connect("C5-2")
-		Connect("C6-2")
-		Connect("CONN1-3")
-		Connect("CONN1-8")
-		Connect("CONN1-29")
-		Connect("CONN1-31")
-		Connect("J1-20")
-		Connect("J2-20")
-		Connect("R1-2")
-		Connect("R2-2")
-		Connect("R7-1")
-		Connect("R8-2")
-		Connect("R9-2")
-		Connect("R11-3")
-		Connect("U1-11")
-		Connect("U2-2")
-		Connect("U2-3")
-		Connect("U2-6")
-		Connect("U2-7")
-		Connect("U4-5")
+		Connect("J2-3")
+		Connect("CONN1-14")
 	)
-	Net("GVDD+22V" "(unknown)")
+	Net("D1" "(unknown)")
 	(
-		Connect("C4-1")
-		Connect("CONN1-23")
-		Connect("J1-4")
-		Connect("R6-2")
-		Connect("U1-1")
-		Connect("U2-8")
+		Connect("J2-2")
+		Connect("CONN1-13")
 	)
-	Net("GVEE-20V" "(unknown)")
+	Net("D0" "(unknown)")
 	(
-		Connect("C3-1")
-		Connect("CONN1-24")
-		Connect("D1-1")
-		Connect("J1-5")
-		Connect("R5-1")
-		Connect("U4-2")
-		Connect("U4-3")
-		Connect("U4-6")
-		Connect("U4-7")
-	)
-	Net("Latch_enable" "(unknown)")
-	(
-		Connect("CONN1-6")
-		Connect("J2-11")
-	)
-	Net("Output_enable" "(unknown)")
-	(
-		Connect("CONN1-7")
-		Connect("J2-10")
-	)
-	Net("SMPS_CONTROL" "(unknown)")
-	(
-		Connect("J2-19")
-		Connect("Q1-G")
-		Connect("R3-2")
+		Connect("J2-1")
+		Connect("CONN1-12")
 	)
 	Net("SPH" "(unknown)")
 	(
-		Connect("CONN1-11")
 		Connect("J2-9")
+		Connect("CONN1-11")
 	)
-	Net("SPV" "(unknown)")
+	Net("Output_enable" "(unknown)")
 	(
-		Connect("J1-12")
-		Connect("J1-14")
-		Connect("J2-17")
+		Connect("J2-10")
+		Connect("CONN1-7")
 	)
-	Net("SPV1" "(unknown)")
+	Net("Latch_enable" "(unknown)")
 	(
-		Connect("CONN1-32")
-		Connect("J1-11")
+		Connect("J2-11")
+		Connect("CONN1-6")
 	)
-	Net("SPV2" "(unknown)")
+	Net("Clock" "(unknown)")
 	(
-		Connect("CONN1-37")
-		Connect("J1-13")
+		Connect("J2-12")
+		Connect("CONN1-5")
 	)
-	Net("unnamed_net1" "(unknown)")
+	Net("EINKVDD" "(unknown)")
 	(
-		Connect("L2-2")
-		Connect("U1-2")
-	)
-	Net("unnamed_net2" "(unknown)")
-	(
-		Connect("C1-2")
-		Connect("L1-1")
-		Connect("L2-1")
-		Connect("Q1-D")
-		Connect("U1-3")
-	)
-	Net("unnamed_net3" "(unknown)")
-	(
-		Connect("C2-2")
-		Connect("D1-2")
-		Connect("U1-5")
-	)
-	Net("unnamed_net4" "(unknown)")
-	(
-		Connect("C2-1")
-		Connect("L1-2")
-		Connect("U1-4")
-	)
-	Net("unnamed_net5" "(unknown)")
-	(
-		Connect("R6-1")
-		Connect("R7-2")
-		Connect("U1-10")
-	)
-	Net("unnamed_net6" "(unknown)")
-	(
-		Connect("R4-1")
-		Connect("R5-2")
-		Connect("U1-6")
-	)
-	Net("unnamed_net7" "(unknown)")
-	(
-		Connect("R4-2")
-		Connect("U1-7")
+		Connect("J2-14")
+		Connect("CONN1-36")
+		Connect("CONN1-35")
+		Connect("CONN1-30")
+		Connect("CONN1-4")
 	)
 	Net("unnamed_net8" "(unknown)")
 	(
 		Connect("R11-2")
 		Connect("U3-3")
 	)
-	Net("unnamed_net9" "(unknown)")
+	Net("VBORDER" "(unknown)")
 	(
-		Connect("R10-1")
-		Connect("R11-1")
+		Connect("CONN1-34")
+		Connect("J1-19")
+	)
+	Net("CKV2" "(unknown)")
+	(
+		Connect("CONN1-38")
+		Connect("J1-17")
+	)
+	Net("CKV" "(unknown)")
+	(
+		Connect("J2-18")
+		Connect("J1-18")
+		Connect("J1-16")
+	)
+	Net("CKV1" "(unknown)")
+	(
+		Connect("CONN1-33")
+		Connect("J1-15")
+	)
+	Net("SPV2" "(unknown)")
+	(
+		Connect("CONN1-37")
+		Connect("J1-13")
+	)
+	Net("SPV" "(unknown)")
+	(
+		Connect("J2-17")
+		Connect("J1-14")
+		Connect("J1-12")
+	)
+	Net("SPV1" "(unknown)")
+	(
+		Connect("CONN1-32")
+		Connect("J1-11")
+	)
+	Net("Gmode2" "(unknown)")
+	(
+		Connect("CONN1-28")
+		Connect("J1-9")
+	)
+	Net("Gmode" "(unknown)")
+	(
+		Connect("J2-13")
+		Connect("J1-10")
+		Connect("J1-8")
+	)
+	Net("Gmode1" "(unknown)")
+	(
+		Connect("CONN1-27")
+		Connect("J1-7")
+	)
+	Net("Vcom" "(unknown)")
+	(
+		Connect("CONN1-22")
+		Connect("U3-1")
+		Connect("U3-2")
+		Connect("J1-6")
 	)
 	Net("V+15v" "(unknown)")
 	(
-		Connect("C5-1")
 		Connect("CONN1-2")
-		Connect("J1-3")
-		Connect("R8-1")
-		Connect("U2-1")
 		Connect("U3-8")
+		Connect("R8-1")
+		Connect("C5-1")
+		Connect("U2-1")
+		Connect("J1-3")
+	)
+	Net("V-15v" "(unknown)")
+	(
+		Connect("R10-2")
+		Connect("R9-1")
+		Connect("C6-1")
+		Connect("U4-1")
+		Connect("CONN1-1")
+		Connect("U3-4")
+		Connect("J1-2")
+	)
+	Net("GVEE-20V" "(unknown)")
+	(
+		Connect("U4-3")
+		Connect("U4-6")
+		Connect("U4-7")
+		Connect("U4-2")
+		Connect("CONN1-24")
+		Connect("J1-5")
+		Connect("C3-1")
+		Connect("R5-1")
+		Connect("D1-1")
+	)
+	Net("Vcc" "(unknown)")
+	(
+		Connect("J1-1")
+		Connect("R3-1")
+		Connect("Q1-S")
+	)
+	Net("SMPS_CONTROL" "(unknown)")
+	(
+		Connect("J2-19")
+		Connect("R3-2")
+		Connect("Q1-G")
+	)
+	Net("unnamed_net7" "(unknown)")
+	(
+		Connect("R4-2")
+		Connect("U1-7")
+	)
+	Net("unnamed_net6" "(unknown)")
+	(
+		Connect("R5-2")
+		Connect("R4-1")
+		Connect("U1-6")
+	)
+	Net("GND" "(unknown)")
+	(
+		Connect("R11-3")
+		Connect("R9-2")
+		Connect("C6-2")
+		Connect("U4-5")
+		Connect("J2-20")
+		Connect("CONN1-31")
+		Connect("CONN1-29")
+		Connect("CONN1-8")
+		Connect("CONN1-3")
+		Connect("R8-2")
+		Connect("C5-2")
+		Connect("U2-3")
+		Connect("U2-6")
+		Connect("U2-7")
+		Connect("U2-2")
+		Connect("J1-20")
+		Connect("R7-1")
+		Connect("C4-2")
+		Connect("C3-2")
+		Connect("C1-1")
+		Connect("R2-2")
+		Connect("R1-2")
+		Connect("U1-11")
+	)
+	Net("unnamed_net5" "(unknown)")
+	(
+		Connect("R7-2")
+		Connect("R6-1")
+		Connect("U1-10")
 	)
 	Net("V+_CONTROL" "(unknown)")
 	(
@@ -1982,15 +2093,20 @@ NetList()
 		Connect("R2-1")
 		Connect("U1-9")
 	)
-	Net("V-15v" "(unknown)")
+	Net("GVDD+22V" "(unknown)")
 	(
-		Connect("C6-1")
-		Connect("CONN1-1")
-		Connect("J1-2")
-		Connect("R9-1")
-		Connect("R10-2")
-		Connect("U3-4")
-		Connect("U4-1")
+		Connect("CONN1-23")
+		Connect("U2-8")
+		Connect("J1-4")
+		Connect("R6-2")
+		Connect("C4-1")
+		Connect("U1-1")
+	)
+	Net("unnamed_net4" "(unknown)")
+	(
+		Connect("C2-1")
+		Connect("L1-2")
+		Connect("U1-4")
 	)
 	Net("V-_CONTROL" "(unknown)")
 	(
@@ -1998,22 +2114,23 @@ NetList()
 		Connect("R1-1")
 		Connect("U1-8")
 	)
-	Net("VBORDER" "(unknown)")
+	Net("unnamed_net3" "(unknown)")
 	(
-		Connect("CONN1-34")
-		Connect("J1-19")
+		Connect("D1-2")
+		Connect("C2-2")
+		Connect("U1-5")
 	)
-	Net("Vcc" "(unknown)")
+	Net("unnamed_net2" "(unknown)")
 	(
-		Connect("J1-1")
-		Connect("Q1-S")
-		Connect("R3-1")
+		Connect("L1-1")
+		Connect("L2-1")
+		Connect("Q1-D")
+		Connect("C1-2")
+		Connect("U1-3")
 	)
-	Net("Vcom" "(unknown)")
+	Net("unnamed_net1" "(unknown)")
 	(
-		Connect("CONN1-22")
-		Connect("J1-6")
-		Connect("U3-1")
-		Connect("U3-2")
+		Connect("L2-2")
+		Connect("U1-2")
 	)
 )

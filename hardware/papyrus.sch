@@ -109,6 +109,8 @@ T 46500 48600 5 10 0 0 180 6 1
 device=PMOS_TRANSISTOR
 T 45900 48400 5 10 1 1 180 6 1
 refdes=Q1
+T 46300 48600 5 10 0 1 0 0 1
+footprint=SOT23
 }
 C 45400 49000 1 180 0 output-2.sym
 {
@@ -187,6 +189,8 @@ T 53900 47400 5 10 0 0 0 6 1
 device=DIODE
 T 54000 47300 5 10 1 1 0 6 1
 refdes=D1
+T 53800 47200 5 10 0 1 0 0 1
+footprint=SOD323
 }
 C 54800 48200 1 90 0 resistor-1.sym
 {
