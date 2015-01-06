@@ -30,9 +30,9 @@ C 49400 47200 1 0 0 lt3463.sym
 T 49600 48900 5 10 1 1 0 0 1
 name=LT3463
 T 51500 48900 5 10 1 1 0 0 1
-refdes=U?
+refdes=U1
 T 45400 43800 5 10 0 1 0 0 1
-footprint=lt3463
+footprint=LT3463
 }
 C 50200 47000 1 0 0 ground.sym
 C 50700 46300 1 0 1 resistor-1.sym
@@ -40,18 +40,22 @@ C 50700 46300 1 0 1 resistor-1.sym
 T 50400 46700 5 10 0 0 0 6 1
 device=RESISTOR
 T 50500 46600 5 10 1 1 0 6 1
-refdes=R?
+refdes=R1
 T 50000 46400 5 10 1 1 0 6 1
 value=10k
+T 50700 46300 5 10 0 1 0 0 1
+footprint=0805
 }
 C 51000 46300 1 0 0 resistor-1.sym
 {
 T 51300 46700 5 10 0 0 0 0 1
 device=RESISTOR
 T 51200 46600 5 10 1 1 0 0 1
-refdes=R?
+refdes=R2
 T 51700 46400 5 10 1 1 0 0 1
 value=10k
+T 51000 46300 5 10 0 1 0 0 1
+footprint=0805
 }
 C 52200 46200 1 90 0 ground.sym
 C 49500 46200 1 270 1 ground.sym
@@ -79,8 +83,8 @@ C 48000 47200 1 0 0 inductor-1.sym
 {
 T 48200 47700 5 10 0 0 0 0 1
 device=INDUCTOR
-T 47900 47300 5 10 1 1 0 0 1
-refdes=L?
+T 47900 47400 5 10 1 1 0 0 1
+refdes=L1
 T 48200 47900 5 10 0 0 0 0 1
 symversion=0.1
 T 48200 47100 5 10 1 1 0 0 1
@@ -91,18 +95,20 @@ C 46600 46900 1 90 0 capacitor-1.sym
 T 45900 47100 5 10 0 0 90 0 1
 device=CAPACITOR
 T 46300 47600 5 10 1 1 180 0 1
-refdes=C?
+refdes=C1
 T 45700 47100 5 10 0 0 90 0 1
 symversion=0.1
 T 46400 47100 5 10 1 1 0 0 1
 value=4.7uF
+T 46600 46900 5 10 0 1 0 0 1
+footprint=0805
 }
 C 45900 49100 1 180 1 pmos-3.sym
 {
 T 46500 48600 5 10 0 0 180 6 1
 device=PMOS_TRANSISTOR
 T 45900 48400 5 10 1 1 180 6 1
-refdes=Q?
+refdes=Q1
 }
 C 45400 49000 1 180 0 output-2.sym
 {
@@ -118,9 +124,11 @@ C 45800 50000 1 90 1 resistor-1.sym
 T 45400 49700 5 10 0 0 90 6 1
 device=RESISTOR
 T 45900 49700 5 10 1 1 180 6 1
-refdes=R?
+refdes=R3
 T 45200 49700 5 10 1 1 180 6 1
 value=10k
+T 45800 50000 5 10 0 1 0 0 1
+footprint=0805
 }
 C 46300 51600 1 270 0 input-2.sym
 {
@@ -140,8 +148,8 @@ C 48000 47800 1 0 0 inductor-1.sym
 {
 T 48200 48300 5 10 0 0 0 0 1
 device=INDUCTOR
-T 42000 55400 5 10 1 1 0 0 1
-refdes=L?
+T 47900 48000 5 10 1 1 0 0 1
+refdes=L2
 T 48200 48500 5 10 0 0 0 0 1
 symversion=0.1
 T 48200 47700 5 10 1 1 0 0 1
@@ -161,11 +169,13 @@ C 53600 45800 1 90 0 capacitor-1.sym
 T 52900 46000 5 10 0 0 90 0 1
 device=CAPACITOR
 T 53300 46500 5 10 1 1 180 0 1
-refdes=C?
+refdes=C2
 T 52700 46000 5 10 0 0 90 0 1
 symversion=0.1
 T 53400 46000 5 10 1 1 0 0 1
 value=1uF
+T 53600 45800 5 10 0 1 0 0 1
+footprint=0805
 }
 N 53400 46700 53400 47800 4
 N 53400 47800 51900 47800 4
@@ -176,25 +186,29 @@ C 54300 46800 1 0 1 diode-1.sym
 T 53900 47400 5 10 0 0 0 6 1
 device=DIODE
 T 54000 47300 5 10 1 1 0 6 1
-refdes=D?
+refdes=D1
 }
 C 54800 48200 1 90 0 resistor-1.sym
 {
 T 54400 48500 5 10 0 0 90 0 1
 device=RESISTOR
 T 54600 48800 5 10 1 1 180 0 1
-refdes=R?
+refdes=R4
 T 55100 48800 5 10 1 1 180 0 1
 value=10k
+T 54800 48200 5 10 0 1 0 0 1
+footprint=0805
 }
 C 54800 47000 1 90 0 resistor-1.sym
 {
 T 54400 47300 5 10 0 0 90 0 1
 device=RESISTOR
 T 54600 47600 5 10 1 1 180 0 1
-refdes=R?
+refdes=R5
 T 55200 47600 5 10 1 1 180 0 1
 value=160k
+T 54800 47000 5 10 0 1 0 0 1
+footprint=0805
 }
 N 54300 47000 56700 47000 4
 N 54700 48200 54700 47900 4
@@ -207,11 +221,13 @@ C 56300 47000 1 90 0 capacitor-1.sym
 T 55600 47200 5 10 0 0 90 0 1
 device=CAPACITOR
 T 56000 47700 5 10 1 1 180 0 1
-refdes=C?
+refdes=C3
 T 55400 47200 5 10 0 0 90 0 1
 symversion=0.1
 T 56100 47200 5 10 1 1 0 0 1
 value=4.7uF
+T 61200 50700 5 10 0 1 0 0 1
+footprint=0805
 }
 C 56300 48200 1 180 0 ground.sym
 C 58100 46900 1 0 1 input-2.sym
@@ -230,9 +246,11 @@ device=CAPACITOR
 T 49700 48900 5 10 0 0 90 2 1
 symversion=0.1
 T 49100 49400 5 10 1 1 180 6 1
-refdes=C?
+refdes=C4
 T 49000 48900 5 10 1 1 0 6 1
 value=4.7uF
+T 48800 48700 5 10 0 1 0 0 1
+footprint=0805
 }
 C 48800 49900 1 180 1 ground.sym
 C 47200 48600 1 0 0 input-2.sym
@@ -259,18 +277,22 @@ C 53700 51600 1 90 0 resistor-1.sym
 T 53300 51900 5 10 0 0 90 0 1
 device=RESISTOR
 T 53500 52200 5 10 1 1 180 0 1
-refdes=R?
+refdes=R6
 T 54200 52100 5 10 1 1 180 0 1
 value=200k
+T 53700 51600 5 10 0 1 0 0 1
+footprint=0805
 }
 C 53700 50300 1 90 0 resistor-1.sym
 {
 T 53300 50600 5 10 0 0 90 0 1
 device=RESISTOR
 T 53500 50900 5 10 1 1 180 0 1
-refdes=R?
+refdes=R7
 T 54000 50800 5 10 1 1 180 0 1
 value=12k
+T 53700 50300 5 10 0 1 0 0 1
+footprint=0805
 }
 N 53600 51600 53600 51200 4
 C 53400 50000 1 0 0 ground.sym
@@ -280,9 +302,11 @@ N 53100 48700 51900 48700 4
 C 48100 38400 1 0 1 connector20-1.sym
 {
 T 48000 44600 5 10 1 1 0 6 1
-refdes=J?
+refdes=J1
 T 47400 44900 5 10 0 0 0 6 1
 device=CONNECTOR_20
+T 48100 38400 5 10 0 1 0 0 1
+footprint=JUMPER20
 }
 C 45000 44200 1 0 0 input-2.sym
 {
@@ -299,9 +323,9 @@ C 58600 52800 1 0 0 MC78L15ACDG.sym
 T 58800 53900 5 10 1 1 0 0 1
 name=MC78L15ACDG
 T 60700 53900 5 10 1 1 0 0 1
-refdes=U?
+refdes=U2
 T 59700 53400 5 10 0 1 0 0 1
-footprint=soic-8
+footprint=SO8
 }
 C 62500 53600 1 0 0 output-2.sym
 {
@@ -319,18 +343,22 @@ device=CAPACITOR
 T 62200 53500 5 10 0 0 270 0 1
 symversion=0.1
 T 61600 53000 5 10 1 1 0 0 1
-refdes=C?
+refdes=C5
 T 61500 53500 5 10 1 1 180 0 1
 value=4.7uF
+T 61300 53700 5 10 0 1 0 0 1
+footprint=0805
 }
 C 62200 53700 1 270 0 resistor-1.sym
 {
 T 62600 53400 5 10 0 0 270 0 1
 device=RESISTOR
 T 62400 53100 5 10 1 1 0 0 1
-refdes=R?
+refdes=R8
 T 61900 53200 5 10 1 1 0 0 1
 value=10k
+T 62200 53700 5 10 0 1 0 0 1
+footprint=0805
 }
 C 62100 52500 1 0 0 ground.sym
 C 61300 52500 1 0 0 ground.sym
@@ -355,18 +383,18 @@ C 57500 44700 1 0 0 lm358.sym
 T 57700 45600 5 10 1 1 0 0 1
 name=LM358
 T 59400 45600 5 10 1 1 0 0 1
-refdes=U?
+refdes=U3
 T 58400 45400 5 10 0 1 0 0 1
-footprint=lm358p
+footprint=SO8
 }
 C 41400 37800 1 0 1 connector39-2.sym
 {
 T 40600 54000 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=CONN1
 T 41000 53950 5 10 0 0 0 6 1
 device=CONNECTOR_39
-T 41000 54150 5 10 0 0 0 6 1
-footprint=SIP39N
+T 40800 53500 5 10 0 1 0 0 1
+footprint=FH26-39S-03SHW
 }
 N 49400 47700 49200 47700 4
 C 42700 53400 1 0 1 input-2.sym
@@ -631,9 +659,11 @@ ED060SC4 Connector
 C 53800 38400 1 0 1 connector20-1.sym
 {
 T 53700 44600 5 10 1 1 0 6 1
-refdes=J?
+refdes=J2
 T 53100 44900 5 10 0 0 0 6 1
 device=CONNECTOR_20
+T 53800 38400 5 10 0 1 0 0 1
+footprint=JUMPER20
 }
 C 50700 44200 1 0 0 input-2.sym
 {
@@ -864,11 +894,11 @@ value=GVEE-20V
 C 58200 49800 1 0 0 MC79L15ACDG.sym
 {
 T 59300 50400 5 10 0 1 0 0 1
-footprint=soic-8
+footprint=SO8
 T 58400 50900 5 10 1 1 0 0 1
 name=MC79L15ACDG
 T 60300 50900 5 10 1 1 0 0 1
-refdes=U?
+refdes=U4
 }
 C 61300 50700 1 90 0 capacitor-1.sym
 {
@@ -877,18 +907,22 @@ device=CAPACITOR
 T 60400 50900 5 10 0 0 90 0 1
 symversion=0.1
 T 61000 51400 5 10 1 1 180 0 1
-refdes=C?
+refdes=C6
 T 61100 50900 5 10 1 1 0 0 1
 value=4.7uF
+T 61300 50700 5 10 0 1 0 0 1
+footprint=0805
 }
 C 62400 50700 1 90 0 resistor-1.sym
 {
 T 62000 51000 5 10 0 0 90 0 1
 device=RESISTOR
 T 62200 51300 5 10 1 1 180 0 1
-refdes=R?
+refdes=R9
 T 62700 51200 5 10 1 1 180 0 1
 value=10k
+T 62400 50700 5 10 0 1 0 0 1
+footprint=0805
 }
 C 62700 50600 1 0 0 output-2.sym
 {
@@ -940,9 +974,11 @@ C 55200 44700 1 270 0 resistor-1.sym
 T 55600 44400 5 10 0 0 270 0 1
 device=RESISTOR
 T 54900 44000 5 10 1 1 0 0 1
-refdes=R?
+refdes=R10
 T 55400 44000 5 10 1 1 0 0 1
 value=47k
+T 55200 44700 5 10 0 1 0 0 1
+footprint=0805
 }
 C 55200 42400 1 270 1 input-2.sym
 {
@@ -958,7 +994,7 @@ C 55200 44700 1 270 1 pot-1.sym
 T 56100 45500 5 10 0 0 270 6 1
 device=VARIABLE_RESISTOR
 T 55100 45300 5 10 1 1 0 6 1
-refdes=R?
+refdes=R11
 T 56700 45500 5 10 0 0 270 6 1
 footprint=none
 T 55500 45200 5 10 1 1 0 0 1
