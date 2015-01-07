@@ -89,6 +89,8 @@ T 48200 47900 5 10 0 0 0 0 1
 symversion=0.1
 T 48200 47100 5 10 1 1 0 0 1
 value=10uH
+T 48000 47200 5 10 0 1 0 0 1
+footprint=4mm_inductor
 }
 C 46600 46900 1 90 0 capacitor-1.sym
 {
@@ -147,6 +149,8 @@ T 48200 48500 5 10 0 0 0 0 1
 symversion=0.1
 T 48200 47700 5 10 1 1 0 0 1
 value=10uH
+T 48000 47800 5 10 0 1 0 0 1
+footprint=4mm_inductor
 }
 C 46600 46600 1 0 1 ground.sym
 N 48900 47900 49400 47900 4
@@ -990,10 +994,10 @@ T 56100 45500 5 10 0 0 270 6 1
 device=VARIABLE_RESISTOR
 T 55100 45300 5 10 1 1 0 6 1
 refdes=R11
-T 56700 45500 5 10 0 0 270 6 1
-footprint=none
 T 55500 45200 5 10 1 1 0 0 1
 value=10k
+T 55400 45100 5 10 0 1 0 0 1
+footprint=10kpot
 }
 C 55100 45900 1 180 1 ground.sym
 N 57500 45200 55800 45200 4
