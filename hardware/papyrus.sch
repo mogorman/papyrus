@@ -7,6 +7,8 @@ T 62200 39700 5 10 1 1 0 0 1
 refdes=ICO1
 T 62900 39500 5 10 1 1 0 0 1
 footprint=oshw
+T 62700 39300 5 10 0 1 0 0 1
+bom=0
 }
 C 40300 37800 0 0 0 title-A2.sym
 T 56600 38500 14 10 1 0 0 0 1
@@ -33,6 +35,8 @@ T 51500 48900 5 10 1 1 0 0 1
 refdes=U1
 T 45400 43800 5 10 0 1 0 0 1
 footprint=LT3463
+T 51600 47700 5 10 0 1 0 0 1
+manufacturer-part=lt3463
 }
 C 50200 47000 1 0 0 ground.sym
 C 50700 46300 1 0 1 resistor-1.sym
@@ -45,6 +49,8 @@ T 50000 46400 5 10 1 1 0 6 1
 value=10k
 T 50700 46300 5 10 0 1 0 0 1
 footprint=0805
+T 50700 46300 5 10 0 1 0 0 1
+manufacturer-part=CRCW080510K0JNEA
 }
 C 51000 46300 1 0 0 resistor-1.sym
 {
@@ -56,6 +62,8 @@ T 51700 46400 5 10 1 1 0 0 1
 value=10k
 T 51000 46300 5 10 0 1 0 0 1
 footprint=0805
+T 51000 46300 5 10 0 1 0 0 1
+manufacturer-part=CRCW080510K0JNEA
 }
 C 52200 46200 1 90 0 ground.sym
 C 49500 46200 1 270 1 ground.sym
@@ -91,6 +99,8 @@ T 48200 47100 5 10 1 1 0 0 1
 value=10uH
 T 48000 47200 5 10 0 1 0 0 1
 footprint=4mm_inductor
+T 48000 47200 5 10 0 1 0 0 1
+manufacturer-part=LQH44PN100MP0L
 }
 C 46700 46900 1 90 0 capacitor-1.sym
 {
@@ -103,7 +113,9 @@ symversion=0.1
 T 46500 47100 5 10 1 1 0 0 1
 value=4.7uF
 T 46700 46900 5 10 0 1 0 0 1
-footprint=0805
+footprint=EIA3528
+T 46700 46900 5 10 0 1 0 0 1
+manufacturer-part=F931E475MBA
 }
 C 45500 48900 1 180 0 output-2.sym
 {
@@ -124,6 +136,8 @@ T 45100 49600 5 10 1 1 180 6 1
 value=10k
 T 45700 49900 5 10 0 1 0 0 1
 footprint=0805
+T 45700 49900 5 10 0 1 0 0 1
+manufacturer-part=CRCW080510K0JNEA
 }
 C 46400 51800 1 270 0 input-2.sym
 {
@@ -151,6 +165,8 @@ T 48200 47700 5 10 1 1 0 0 1
 value=10uH
 T 48000 47800 5 10 0 1 0 0 1
 footprint=4mm_inductor
+T 48000 47800 5 10 0 1 0 0 1
+manufacturer-part=LQH44PN100MP0L
 }
 C 46700 46600 1 0 1 ground.sym
 N 48900 47900 49400 47900 4
@@ -172,7 +188,9 @@ symversion=0.1
 T 53400 46000 5 10 1 1 0 0 1
 value=1uF
 T 53600 45800 5 10 0 1 0 0 1
-footprint=0805
+footprint=EIA3216
+T 53900 50200 5 10 0 1 0 0 1
+manufacturer-part=F931V105MAA
 }
 N 53400 46700 53400 47800 4
 N 53400 47800 51900 47800 4
@@ -186,6 +204,8 @@ T 54000 47300 5 10 1 1 0 6 1
 refdes=D1
 T 53800 47200 5 10 0 1 0 0 1
 footprint=SOD323
+T 53700 46800 5 10 0 1 0 0 1
+manufacturer-part=1N4148WX-TP
 }
 C 54800 48200 1 90 0 resistor-1.sym
 {
@@ -197,6 +217,8 @@ T 55100 48800 5 10 1 1 180 0 1
 value=10k
 T 54800 48200 5 10 0 1 0 0 1
 footprint=0805
+T 54800 48200 5 10 0 1 0 0 1
+manufacturer-part=CRCW080510K0JNEA
 }
 C 54800 47000 1 90 0 resistor-1.sym
 {
@@ -208,6 +230,8 @@ T 55200 47600 5 10 1 1 180 0 1
 value=160k
 T 54800 47000 5 10 0 1 0 0 1
 footprint=0805
+T 54700 47500 5 10 0 1 0 0 1
+manufacturer-part=CRCW0805160KFKEA
 }
 N 54300 47000 56700 47000 4
 N 54700 48200 54700 47900 4
@@ -226,7 +250,9 @@ symversion=0.1
 T 56100 47200 5 10 1 1 0 0 1
 value=4.7uF
 T 61200 50700 5 10 0 1 0 0 1
-footprint=0805
+footprint=EIA3528
+T 56300 47000 5 10 0 1 0 0 1
+manufacturer-part=F931E475MBA
 }
 C 56300 48200 1 180 0 ground.sym
 C 58100 46900 1 0 1 input-2.sym
@@ -249,7 +275,9 @@ refdes=C4
 T 49000 48900 5 10 1 1 0 6 1
 value=4.7uF
 T 48800 48700 5 10 0 1 0 0 1
-footprint=0805
+footprint=EIA3528
+T 48800 48700 5 10 0 1 0 0 1
+manufacturer-part=F931E475MBA
 }
 C 48800 49900 1 180 1 ground.sym
 C 47200 48600 1 0 0 input-2.sym
@@ -281,6 +309,8 @@ T 54200 52100 5 10 1 1 180 0 1
 value=200k
 T 53700 51600 5 10 0 1 0 0 1
 footprint=0805
+T 53500 51900 5 10 0 1 0 0 1
+manufacturer-part=CRCW0805200KFKEA
 }
 C 53700 50300 1 90 0 resistor-1.sym
 {
@@ -292,6 +322,8 @@ T 54000 50800 5 10 1 1 180 0 1
 value=12k
 T 53700 50300 5 10 0 1 0 0 1
 footprint=0805
+T 53700 50500 5 10 0 1 0 0 1
+manufacturer-part=CRCW080512K0JNEB
 }
 N 53600 51600 53600 51200 4
 C 53400 50000 1 0 0 ground.sym
@@ -306,6 +338,8 @@ T 47400 44900 5 10 0 0 0 6 1
 device=CONNECTOR_20
 T 48100 38400 5 10 0 1 0 0 1
 footprint=JUMPER20
+T 48100 38400 5 10 0 1 0 0 1
+manufacturer-part=single-row-headers
 }
 C 45000 44200 1 0 0 input-2.sym
 {
@@ -325,6 +359,8 @@ T 60700 53900 5 10 1 1 0 0 1
 refdes=U2
 T 59700 53400 5 10 0 1 0 0 1
 footprint=SO8
+T 59700 53600 5 10 0 1 0 0 1
+manufacturer-part=MC78L15ACDG
 }
 C 62500 53600 1 0 0 output-2.sym
 {
@@ -346,7 +382,9 @@ refdes=C5
 T 61500 53500 5 10 1 1 180 0 1
 value=4.7uF
 T 61300 53700 5 10 0 1 0 0 1
-footprint=0805
+footprint=EIA3528
+T 61300 53700 5 10 0 1 0 0 1
+manufacturer-part=F931E475MBA
 }
 C 62200 53700 1 270 0 resistor-1.sym
 {
@@ -358,6 +396,8 @@ T 61900 53200 5 10 1 1 0 0 1
 value=10k
 T 62200 53700 5 10 0 1 0 0 1
 footprint=0805
+T 62200 53700 5 10 0 1 0 0 1
+manufacturer-part=CRCW080510K0JNEA
 }
 C 62100 52500 1 0 0 ground.sym
 C 61300 52500 1 0 0 ground.sym
@@ -385,6 +425,8 @@ T 59400 45600 5 10 1 1 0 0 1
 refdes=U3
 T 58400 45400 5 10 0 1 0 0 1
 footprint=SO8
+T 58600 44700 5 10 0 1 0 0 1
+manufacturer-part=LM358PSR
 }
 C 41400 37800 1 0 1 connector39-2.sym
 {
@@ -394,6 +436,8 @@ T 41000 53950 5 10 0 0 0 6 1
 device=CONNECTOR_39
 T 40800 53500 5 10 0 1 0 0 1
 footprint=FH26-39S-03SHW
+T 40500 46600 5 10 0 1 0 0 1
+manufacturer-part=FH26-39S-0.3SHW(05)
 }
 N 49400 47700 49200 47700 4
 C 42700 53400 1 0 1 input-2.sym
@@ -663,6 +707,8 @@ T 53100 44900 5 10 0 0 0 6 1
 device=CONNECTOR_20
 T 53800 38400 5 10 0 1 0 0 1
 footprint=JUMPER20
+T 53800 38400 5 10 0 1 0 0 1
+manufacturer-part=single-row-headers
 }
 C 50700 44200 1 0 0 input-2.sym
 {
@@ -898,6 +944,8 @@ T 58400 50900 5 10 1 1 0 0 1
 name=MC79L15ACDG
 T 60300 50900 5 10 1 1 0 0 1
 refdes=U4
+T 59900 50400 5 10 0 1 0 0 1
+manufacturer-part=MC79L15ACDG
 }
 C 61300 50700 1 90 0 capacitor-1.sym
 {
@@ -910,7 +958,9 @@ refdes=C6
 T 61100 50900 5 10 1 1 0 0 1
 value=4.7uF
 T 61300 50700 5 10 0 1 0 0 1
-footprint=0805
+footprint=EIA3528
+T 61300 50700 5 10 0 1 0 0 1
+manufacturer-part=F931E475MBA
 }
 C 62400 50700 1 90 0 resistor-1.sym
 {
@@ -922,6 +972,8 @@ T 62700 51200 5 10 1 1 180 0 1
 value=10k
 T 62400 50700 5 10 0 1 0 0 1
 footprint=0805
+T 62400 50700 5 10 0 1 0 0 1
+manufacturer-part=CRCW080510K0JNEA
 }
 C 62700 50600 1 0 0 output-2.sym
 {
@@ -972,12 +1024,14 @@ C 55200 44700 1 270 0 resistor-1.sym
 {
 T 55600 44400 5 10 0 0 270 0 1
 device=RESISTOR
-T 54900 44000 5 10 1 1 0 0 1
+T 54800 44100 5 10 1 1 0 0 1
 refdes=R10
-T 55400 44000 5 10 1 1 0 0 1
+T 55500 44100 5 10 1 1 0 0 1
 value=47k
 T 55200 44700 5 10 0 1 0 0 1
 footprint=0805
+T 55300 44200 5 10 0 1 0 0 1
+manufacturer-part=CRCW080547K0FKEA
 }
 C 55200 42400 1 270 1 input-2.sym
 {
@@ -998,6 +1052,8 @@ T 55500 45200 5 10 1 1 0 0 1
 value=10k
 T 55400 45100 5 10 0 1 0 0 1
 footprint=10kpot
+T 55300 45200 5 10 0 1 0 0 1
+manufacturer-part=36FR10KLF
 }
 C 55100 45900 1 180 1 ground.sym
 N 57500 45200 55800 45200 4
@@ -1160,4 +1216,6 @@ T 46000 48500 5 10 1 1 180 0 1
 refdes=Q1
 T 46200 48700 5 10 0 1 0 0 1
 footprint=SOT23
+T 46000 48600 5 10 0 1 0 0 1
+manufacturer-part=IRLML6402TRPBF
 }
