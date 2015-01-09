@@ -45,3 +45,6 @@ if [ "$New_schematic" == "0" ]; then
 else
     copy_files schematic.png ~/artifacts/papyrus/schematic.png
 fi
+cd ~/
+rsync -Pav ./artifacts rldn.net:~/
+
