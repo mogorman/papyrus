@@ -45,7 +45,7 @@ if [ "$New_schematic" == "0" ]; then
 else
     copy_files schematic.png ~/artifacts/papyrus/schematic.png
 fi
-cd ../hardware
+cd ../firmware
 make
 New_FPGA=`git diff HEAD^ HEAD -- led_test.vhd|wc -l`
 if [ "$New_FPGA" == "0" ]; then
