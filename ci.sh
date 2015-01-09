@@ -45,6 +45,16 @@ if [ "$New_schematic" == "0" ]; then
 else
     copy_files schematic.png ~/artifacts/papyrus/schematic.png
 fi
+cd ../hardware
+make
+New_FPGA=`git diff HEAD^ HEAD -- led_test.vhd|wc -l`
+if [ "$New_FPGA" == "0" ]; then
+    echo "No changes to VHDL don't bother saving the Bitstream."
+else
+    copy_files led_test.bit ~/artifacts/papyrus/led_test.bit
+fi
+
+
 cd ~/
 rsync -Pav ./artifacts rldn.net:~/
 

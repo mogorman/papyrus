@@ -14,6 +14,9 @@ sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript 
 
 [schematic](http://artifacts.meatstand.com/papyrus/schematic.png)
 
+[bitstream](http://artifacts.meatstand.com/papyrus/led_test.bit)
+
+
 [![the board](http://artifacts.meatstand.com/papyrus/board.png)](http://artifacts.meatstand.com/papyrus/board.png)
 
 [![build status](http://ci.meatstand.com/projects/4/status.png?ref=master)](http://ci.meatstand.com/projects/4?ref=master)
