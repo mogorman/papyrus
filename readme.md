@@ -16,6 +16,6 @@ sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript 
 
 [![the board](http://artifacts.meatstand.com/papyrus/board.png)](http://artifacts.meatstand.com/papyrus/board.png)
 
-[![build status](http://ci.meatstand.com/projects/2/status.png?ref=master)](http://ci.meatstand.com/projects/2?ref=master)
+[![build status](http://ci.meatstand.com/projects/4/status.png?ref=master)](http://ci.meatstand.com/projects/2?ref=master)
 
 
