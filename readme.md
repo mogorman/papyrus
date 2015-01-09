@@ -18,4 +18,3 @@ sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript 
 
 [![build status](http://ci.meatstand.com/projects/4/status.png?ref=master)](http://ci.meatstand.com/projects/4?ref=master)
 
-
