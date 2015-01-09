@@ -2,6 +2,7 @@ PROJECT_NAME = led_test
 PART = xc6slx9-3-ftg256
 # Set the amount of output that will be displayed (xflow or silent generally)
 INTSTYLE = xflow
+XILINX=/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/
 
 BUILD_DIR = build
 
@@ -11,6 +12,7 @@ syn:
 	@echo "Make: Synthesizing"
 	@mkdir -p $(BUILD_DIR)
 	@cd $(BUILD_DIR); \
+	PATH=$PATH:$(XILINX)  export PATH; \
 	xst \
 	-intstyle $(INTSTYLE) \
 	-ifn "../ise/$(PROJECT_NAME).xst" \
@@ -19,6 +21,7 @@ syn:
 tran:
 	@echo "Make: Translate"
 	@cd $(BUILD_DIR); \
+	PATH=$PATH:$(XILINX)  export PATH; \
 	ngdbuild \
 	-intstyle $(INTSTYLE) \
 	-dd _ngo \
@@ -29,6 +32,7 @@ tran:
 map:
 	@echo "Make: Map"
 	@cd $(BUILD_DIR); \
+	PATH=$PATH:$(XILINX)  export PATH; \
 	map \
 	-intstyle $(INTSTYLE) \
 	-p $(PART) \
@@ -40,6 +44,7 @@ map:
 par:
 	@echo "Make: Place & Route"
 	@cd $(BUILD_DIR); \
+	PATH=$PATH:$(XILINX)  export PATH; \
 	par \
 	-w \
 	-intstyle $(INTSTYLE) \
@@ -50,6 +55,7 @@ par:
 trce:
 	@echo "Make: Trace"
 	@cd $(BUILD_DIR); \
+	PATH=$PATH:$(XILINX)  export PATH; \
 	trce \
 	-intstyle $(INTSTYLE) \
 	-v 3 \
@@ -62,6 +68,7 @@ trce:
 bit:
 	@echo "Make: Bitgen"
 	@cd $(BUILD_DIR); \
+	PATH=$PATH:$(XILINX)  export PATH; \
 	bitgen \
 	-intstyle $(INTSTYLE) \
 	-f ../ise/$(PROJECT_NAME).ut $(PROJECT_NAME).ncd 
