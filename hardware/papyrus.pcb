@@ -2051,7 +2051,7 @@ Layer(1 "component")
 	Line[64.4700mm 31.4150mm 2510.00mil 1265.00mil 8.00mil 16.00mil "clearline"]
 	Polygon("clearpoly")
 	(
-		[46.6921mm 17.0179mm] [84.7921mm 17.0179mm] [84.7921mm 3419.99mil] [46.6921mm 3419.99mil] 
+		[45.6761mm 19.0499mm] [83.7761mm 19.0499mm] [83.7761mm 88.8997mm] [45.6761mm 88.8997mm] 
 	)
 )
 Layer(2 "solder")
