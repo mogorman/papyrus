@@ -18,7 +18,7 @@ syn:
 	-ifn "../ise/$(PROJECT_NAME).xst" \
 	-ofn "$(PROJECT_NAME).syr"
 
-tran:
+tran: syn
 	@echo "Make: Translate"
 	@cd $(BUILD_DIR); \
 	PATH=$PATH:$(XILINX)  export PATH; \
@@ -29,7 +29,7 @@ tran:
 	-uc ../ucf/$(PROJECT_NAME).ucf \
 	-p $(PART) $(PROJECT_NAME).ngc $(PROJECT_NAME).ngd  
 
-map:
+map: tran
 	@echo "Make: Map"
 	@cd $(BUILD_DIR); \
 	PATH=$PATH:$(XILINX)  export PATH; \
@@ -41,7 +41,7 @@ map:
 	-c 100 \
 	-o $(PROJECT_NAME).ncd $(PROJECT_NAME).ngd $(PROJECT_NAME).pcf 
 
-par:
+par: map
 	@echo "Make: Place & Route"
 	@cd $(BUILD_DIR); \
 	PATH=$PATH:$(XILINX)  export PATH; \
@@ -52,7 +52,7 @@ par:
 	-xe n \
 	-mt off $(PROJECT_NAME).ncd $(PROJECT_NAME).ncd $(PROJECT_NAME).pcf 
 
-trce:
+trce: par
 	@echo "Make: Trace"
 	@cd $(BUILD_DIR); \
 	PATH=$PATH:$(XILINX)  export PATH; \
@@ -65,7 +65,7 @@ trce:
 	-xml $(PROJECT_NAME).twx $(PROJECT_NAME).ncd \
 	-o $(PROJECT_NAME).twr $(PROJECT_NAME).pcf 
 
-bit:
+bit: trce
 	@echo "Make: Bitgen"
 	@cd $(BUILD_DIR); \
 	PATH=$PATH:$(XILINX)  export PATH; \
