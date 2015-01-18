@@ -1,4 +1,4 @@
-PROJECT_NAME = led_test
+PROJECT_NAME = papyrus
 PART = xc6slx9-3-ftg256
 # Set the amount of output that will be displayed (xflow or silent generally)
 INTSTYLE = xflow
