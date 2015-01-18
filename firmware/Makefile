@@ -78,6 +78,6 @@ clean:
 	@rm -Rf $(BUILD_DIR)
 	@rm -f $(PROJECT_NAME).bit
 
-install: bit
+install:
 	@echo "Make: Install"
 	sudo xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
