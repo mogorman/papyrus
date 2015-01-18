@@ -2450,9 +2450,9 @@ Layer(9 "silk")
 	Text[1970.00mil 1430.00mil 0 100 "D2" "clearline,onsolder"]
 	Text[1970.00mil 1330.00mil 0 100 "D1" "clearline,onsolder"]
 	Text[1970.00mil 1230.00mil 0 100 "D0" "clearline,onsolder"]
-	Text[2820.00mil 2410.00mil 2 100 "This board is" "clearline,selected,onsolder"]
-	Text[2850.00mil 2530.00mil 2 100 "CC-BY-SA 4.0" "clearline,selected,onsolder"]
-	Text[2750.00mil 2470.00mil 2 100 "licensed" "clearline,selected,onsolder"]
+	Text[2820.00mil 2410.00mil 2 100 "This board is" "clearline,onsolder"]
+	Text[2850.00mil 2530.00mil 2 100 "CC-BY-SA 4.0" "clearline,onsolder"]
+	Text[2750.00mil 2470.00mil 2 100 "licensed" "clearline,onsolder"]
 )
 Layer(10 "silk")
 (
