@@ -12,6 +12,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity led_test is
     Port ( clk50 : in  STD_LOGIC;
+           hdmi_in_sclk  : inout  STD_LOGIC;
+           hdmi_in_sdat  : inout  STD_LOGIC;
            leds : out  STD_LOGIC_VECTOR (7 downto 0));
 end led_test;
 
