@@ -2453,6 +2453,7 @@ Layer(9 "silk")
 	Text[2820.00mil 2410.00mil 2 100 "This board is" "clearline,onsolder"]
 	Text[2850.00mil 2530.00mil 2 100 "CC-BY-SA 4.0" "clearline,onsolder"]
 	Text[2750.00mil 2470.00mil 2 100 "licensed" "clearline,onsolder"]
+	Text[3010.00mil 1080.00mil 2 100 "http://meatstand.com/papyrus" "clearline,onsolder"]
 )
 Layer(10 "silk")
 (
