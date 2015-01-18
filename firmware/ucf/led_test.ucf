@@ -15,7 +15,7 @@ NET "LEDS<7>" LOC="P7";
 #
 # #
 # # HDMI output
-NET "hdmi_out_p<0>" LOC="C13" | IOSTANDARD="TMDS_33"; # IO_L63P_SCP7_0
+# NET "hdmi_out_p<0>" LOC="C13" | IOSTANDARD="TMDS_33"; # IO_L63P_SCP7_0
 # NET "hdmi_out_n<0>" LOC="A13" | IOSTANDARD="TMDS_33"; # IO_L63N_SCP6_0
 # NET "hdmi_out_p<1>" LOC="B12" | IOSTANDARD="TMDS_33"; # IO_L62P_0
 # NET "hdmi_out_n<1>" LOC="A12" | IOSTANDARD="TMDS_33"; # IO_L62N_VREF_0

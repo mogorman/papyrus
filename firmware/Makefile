@@ -6,7 +6,7 @@ XILINX=/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/
 
 BUILD_DIR = build
 
-all: syn tran map par trce bit
+all: syn ncd tran map par trce bit
 
 syn:
 	@echo "Make: Synthesizing"
@@ -18,7 +18,16 @@ syn:
 	-ifn "../ise/$(PROJECT_NAME).xst" \
 	-ofn "$(PROJECT_NAME).syr"
 
-tran: syn
+ncd: syn
+	@echo "Make: NCD"
+	@cd $(BUILD_DIR); \
+	PATH=$PATH:$(XILINX)  export PATH; \
+	xdl \
+	-force \
+	-xdl2ncd "../ise/$(PROJECT_NAME).xdl" \
+	"./$(PROJECT_NAME)_ncd.ncd"
+
+tran: ncd
 	@echo "Make: Translate"
 	@cd $(BUILD_DIR); \
 	PATH=$PATH:$(XILINX)  export PATH; \
