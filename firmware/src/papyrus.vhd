@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Company: 
+-- Company:	   Meatstand
 -- Engineer:       Mike Field <hamster@snap.net.nz> 
 -- Module Name:    papyrus - Behavioral 
 -- Project Name:   miniSpartan6/test1

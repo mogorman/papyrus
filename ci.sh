@@ -47,11 +47,11 @@ else
 fi
 cd ../firmware
 make
-New_FPGA=`git diff HEAD^ HEAD -- led_test.vhd|wc -l`
+New_FPGA=`git diff HEAD^ HEAD -- papyrus.vhd|wc -l`
 if [ "$New_FPGA" == "0" ]; then
     echo "No changes to VHDL don't bother saving the Bitstream."
 else
-    copy_files led_test.bit ~/artifacts/papyrus/led_test.bit
+    copy_files papyrus.bit ~/artifacts/papyrus/papyrus.bit
 fi
 
 
