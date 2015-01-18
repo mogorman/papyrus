@@ -1,1 +1,1 @@
-vhdl work "../src/led_test.vhd"
+vhdl work "../src/papyrus.vhd"

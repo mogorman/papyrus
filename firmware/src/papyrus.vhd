@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer:       Mike Field <hamster@snap.net.nz> 
--- Module Name:    led_test - Behavioral 
+-- Module Name:    papyrus - Behavioral 
 -- Project Name:   miniSpartan6/test1
 -- Target Devices: miniSpartan6 (XC6SLX9)
 -- Description:    A first project for the miniSpartan6
@@ -10,14 +10,14 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity led_test is
+entity papyrus is
     Port ( clk50 : in  STD_LOGIC;
            hdmi_in_sclk  : inout  STD_LOGIC;
            hdmi_in_sdat  : inout  STD_LOGIC;
            leds : out  STD_LOGIC_VECTOR (7 downto 0));
-end led_test;
+end papyrus;
 
-architecture Behavioral of led_test is
+architecture Behavioral of papyrus is
    signal count : unsigned(29 downto 0) := (others => '0');
 begin
 
