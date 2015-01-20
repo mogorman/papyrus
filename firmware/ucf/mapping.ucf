@@ -1,8 +1,8 @@
 #Created by Constraints Editor (xc6slx25-ftg256-3) - 2015/01/02
-#NET "clk50" PERIOD = 20 ns | LOC = "K3"; # IO_L42P_GCLK25_TRDY2_M3UDM
+NET "clk50" PERIOD = 20 ns | LOC = "K3"; # IO_L42P_GCLK25_TRDY2_M3UDM
 VCCAUX = 3.3;
 
-NET "clk50" PERIOD = 31.25 ns | LOC = "J4"; # IO_L42N_GCLK24_M3LDM_3
+#NET "clk50" PERIOD = 31.25 ns | LOC = "J4"; # IO_L42N_GCLK24_M3LDM_3
 
 NET "LEDS<0>" LOC="P11";
 NET "LEDS<1>" LOC="N9";

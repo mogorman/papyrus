@@ -1,5 +1,7 @@
 firmware/build
 firmware/*.bit
+firmware/ise/spiflasher/build/
+firmware/ise/spiflasher/spiflasher.bit
 hardware/*.zip
 hardware/*.pcb-*
 hardware/gerbers

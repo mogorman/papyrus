@@ -1,4 +1,4 @@
-PROJECT_NAME = papyrus
+PROJECT_NAME = spiflasher
 PART = xc6slx9-3-ftg256
 # Set the amount of output that will be displayed (xflow or silent generally)
 INTSTYLE = xflow
@@ -102,17 +102,9 @@ install:
 	@echo "Make: Install"
 	sudo xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
 
-flasher:
-	@if [ ! -f ise/spiflasher/spiflasher.bit ] ; \
-	then \
-		echo "Make: Building flasher"; \
-		cd ise/spiflasher; \
-		make; \
-	fi	
-
-flash: flasher
+flash:
 	@echo "Make: Install to flash"
-	sudo xc3sprog -v -v -c ftdi "ise/spiflasher/spiflasher.bit"
+	sudo xc3sprog -v -v -c ftdi "ise/spiflasherLX9.bit"
 	sudo xc3sprog  -v -v -c ftdi -I "$(PROJECT_NAME).bit"
 	sudo xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
 

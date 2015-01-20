@@ -11,14 +11,14 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity papyrus is
+entity top is
     Port ( clk50 : in  STD_LOGIC;
            hdmi_in_sclk  : inout  STD_LOGIC;
            hdmi_in_sdat  : inout  STD_LOGIC;
            leds : out  STD_LOGIC_VECTOR (7 downto 0));
-end papyrus;
+end top;
 
-architecture Behavioral of papyrus is
+architecture Behavioral of top is
    signal count : unsigned(29 downto 0) := (others => '0');
 begin
 
