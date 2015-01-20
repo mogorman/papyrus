@@ -6,7 +6,7 @@ XILINX=/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/
 VHDL=$(wildcard src/*.vhd)
 BUILD_DIR = build
 
-all: prj syn tran map par trce bit
+all: clean prj syn tran map par trce bit
 
 prj:
 	@echo "Make: Project file"
@@ -96,3 +96,20 @@ clean:
 install:
 	@echo "Make: Install"
 	sudo xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
+
+flasher:
+	@if [ ! -f ise/spiflasher/spiflasher.bit ] ; \
+	then \
+		echo "Make: Building flasher"; \
+		cd ise/spiflasher; \
+		make; \
+	fi	
+
+flash: flasher
+	@echo "Make: Install to flash"
+	sudo xc3sprog -v -v -c ftdi "ise/spiflasher/spiflasher.bit"
+	sudo xc3sprog  -v -v -c ftdi -I "$(PROJECT_NAME).bit"
+	sudo xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
+
+
+

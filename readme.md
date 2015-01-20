@@ -6,7 +6,7 @@ clear
 backlight
 invert
 
-Dependencies for papyrus
+Dependencies for papyrus and all of ise to build fpga code.
 
 sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript poppler-utils pcb imagemagick zip bc make git srecord geda-gnetlist gerbv xvfb
 
@@ -21,3 +21,5 @@ sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript 
 
 [![build status](http://ci.meatstand.com/projects/4/status.png?ref=master)](http://ci.meatstand.com/projects/4?ref=master)
 
+
+spi flasher taken from https://svn.code.sf.net/p/xc3sprog/code revision 772 trunk
