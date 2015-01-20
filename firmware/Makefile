@@ -3,8 +3,6 @@ PART = xc6slx9-3-ftg256
 # Set the amount of output that will be displayed (xflow or silent generally)
 INTSTYLE = xflow
 XILINX=/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/
-VHDL=$(wildcard src/*.vhd)
-VERILOG=$(wildcard src/*.v)
 
 BUILD_DIR = build
 
@@ -16,11 +14,11 @@ prj:
 	@rm -f build/$(PROJECT_NAME).prj
 	@touch build/$(PROJECT_NAME).prj
 	@cd $(BUILD_DIR); \
-	for file in $(VHDL); do \
-		echo vhdl work \"../$$file\" >> ./$(PROJECT_NAME).prj; \
+	for file in $$(find ../src -name "*.vhd"); do \
+		echo vhdl `dirname $${file}| sed -e 's/^...//' -e 's/\//_/g'` \"$$file\" >> ./$(PROJECT_NAME).prj; \
 	done; \
-	for file in $(VERILOG); do \
-		echo verilog work \"../$$file\" >> ./$(PROJECT_NAME).prj; \
+	for file in $$(find ../src -name "*.v"); do \
+		echo verilog `dirname $${file}| sed -e 's/^...//' -e 's/\//_/g'` \"$$file\" >> ./$(PROJECT_NAME).prj; \
 	done
 
 
