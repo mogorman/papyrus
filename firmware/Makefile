@@ -9,7 +9,7 @@ BUILD_DIR = build
 all: prj syn tran map par trce bit
 
 prj:
-	@echo "Make: project file"
+	@echo "Make: Project file"
 	@mkdir -p $(BUILD_DIR)
 	@rm -f build/$(PROJECT_NAME).prj
 	@touch build/$(PROJECT_NAME).prj
@@ -22,27 +22,31 @@ syn: prj $(VHDL)
 	@echo "Make: Synthesizing"
 	@mkdir -p $(BUILD_DIR)
 	@cd $(BUILD_DIR); \
-	PATH=$PATH:$(XILINX)  export PATH; \
+	PATH=$$PATH:$(XILINX)  export PATH; \
+	cp ../ise/project.xst ./$(PROJECT_NAME).xst; \
+	echo "-ifn ./$(PROJECT_NAME).prj" >> ./$(PROJECT_NAME).xst; \
+	echo "-ofn $(PROJECT_NAME)" >> ./$(PROJECT_NAME).xst; \
+	echo "-top $(PROJECT_NAME)" >> ./$(PROJECT_NAME).xst; \
 	xst \
 	-intstyle $(INTSTYLE) \
-	-ifn "../ise/$(PROJECT_NAME).xst" \
+	-ifn "./$(PROJECT_NAME).xst" \
 	-ofn "$(PROJECT_NAME).syr"
 
 tran: syn
 	@echo "Make: Translate"
 	@cd $(BUILD_DIR); \
-	PATH=$PATH:$(XILINX)  export PATH; \
+	PATH=$$PATH:$(XILINX)  export PATH; \
 	ngdbuild \
 	-intstyle $(INTSTYLE) \
 	-dd _ngo \
 	-nt timestamp \
-	-uc ../ucf/$(PROJECT_NAME).ucf \
+	-uc ../ucf/mapping.ucf \
 	-p $(PART) $(PROJECT_NAME).ngc $(PROJECT_NAME).ngd  
 
 map: tran
 	@echo "Make: Map"
 	@cd $(BUILD_DIR); \
-	PATH=$PATH:$(XILINX)  export PATH; \
+	PATH=$$PATH:$(XILINX)  export PATH; \
 	map \
 	-intstyle $(INTSTYLE) \
 	-p $(PART) \
@@ -54,7 +58,7 @@ map: tran
 par: map
 	@echo "Make: Place & Route"
 	@cd $(BUILD_DIR); \
-	PATH=$PATH:$(XILINX)  export PATH; \
+	PATH=$$PATH:$(XILINX)  export PATH; \
 	par \
 	-w \
 	-intstyle $(INTSTYLE) \
@@ -65,7 +69,7 @@ par: map
 trce: par
 	@echo "Make: Trace"
 	@cd $(BUILD_DIR); \
-	PATH=$PATH:$(XILINX)  export PATH; \
+	PATH=$$PATH:$(XILINX)  export PATH; \
 	trce \
 	-intstyle $(INTSTYLE) \
 	-v 3 \
@@ -78,10 +82,11 @@ trce: par
 bit: trce
 	@echo "Make: Bitgen"
 	@cd $(BUILD_DIR); \
-	PATH=$PATH:$(XILINX)  export PATH; \
+	PATH=$$PATH:$(XILINX)  export PATH; \
+	cp ../ise/project.ut ./$(PROJECT_NAME).ut; \
 	bitgen \
 	-intstyle $(INTSTYLE) \
-	-f ../ise/$(PROJECT_NAME).ut $(PROJECT_NAME).ncd 
+	-f ./$(PROJECT_NAME).ut $(PROJECT_NAME).ncd 
 	@cp $(BUILD_DIR)/$(PROJECT_NAME).bit .
 
 clean:

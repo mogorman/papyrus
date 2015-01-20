@@ -1,9 +1,6 @@
 run
--ifn ./papyrus.prj
--ofn papyrus
 -ofmt NGC
 -p xc6slx9-3-ftg256
--top papyrus
 -opt_mode Speed
 -opt_level 1
 -power NO
