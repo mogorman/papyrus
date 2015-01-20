@@ -1,5 +1,5 @@
 run
--ifn ../ise/papyrus.prj
+-ifn ./papyrus.prj
 -ofn papyrus
 -ofmt NGC
 -p xc6slx9-3-ftg256

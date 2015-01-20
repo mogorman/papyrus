@@ -3,12 +3,22 @@ PART = xc6slx9-3-ftg256
 # Set the amount of output that will be displayed (xflow or silent generally)
 INTSTYLE = xflow
 XILINX=/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/
-
+VHDL=$(wildcard src/*.vhd)
 BUILD_DIR = build
 
-all: syn tran map par trce bit
+all: prj syn tran map par trce bit
 
-syn:
+prj:
+	@echo "Make: project file"
+	@mkdir -p $(BUILD_DIR)
+	@rm -f build/$(PROJECT_NAME).prj
+	@touch build/$(PROJECT_NAME).prj
+	@cd $(BUILD_DIR); \
+	for file in $(VHDL); do \
+		echo vhdl work \"../$$file\" >> ./$(PROJECT_NAME).prj; \
+	done
+
+syn: prj $(VHDL) 
 	@echo "Make: Synthesizing"
 	@mkdir -p $(BUILD_DIR)
 	@cd $(BUILD_DIR); \
