@@ -1,4 +1,5 @@
-/*playing with verilog
+/*playing with verilog */
+
 module top (
     input clk50,
     output [1:0] led
