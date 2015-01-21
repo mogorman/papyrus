@@ -3,15 +3,17 @@ NET "clk50" PERIOD = 20 ns | LOC = "K3"; # IO_L42P_GCLK25_TRDY2_M3UDM
 VCCAUX = 3.3;
 
 #NET "clk50" PERIOD = 31.25 ns | LOC = "J4"; # IO_L42N_GCLK24_M3LDM_3
+NET "led<0>" LOC="P11";
+NET "led<1>" LOC="P7"; # throw this line away
 
-NET "LEDS<0>" LOC="P11";
-NET "LEDS<1>" LOC="N9";
-NET "LEDS<2>" LOC="M9";
-NET "LEDS<3>" LOC="P9";
-NET "LEDS<4>" LOC="T8";
-NET "LEDS<5>" LOC="N8";
-NET "LEDS<6>" LOC="P8";
-NET "LEDS<7>" LOC="P7";
+# NET "LEDS<0>" LOC="P11";
+# NET "LEDS<1>" LOC="N9";
+# NET "LEDS<2>" LOC="M9";
+# NET "LEDS<3>" LOC="P9";
+# NET "LEDS<4>" LOC="T8";
+# NET "LEDS<5>" LOC="N8";
+# NET "LEDS<6>" LOC="P8";
+# NET "LEDS<7>" LOC="P7";
 #
 # #
 # # HDMI output
@@ -34,5 +36,5 @@ NET "LEDS<7>" LOC="P7";
 #NET "hdmi_in_n<2>" LOC="A5" | IOSTANDARD="TMDS_33"; # IO_L2N_0
 #NET "hdmi_in_p<3>" LOC="C9" | IOSTANDARD="TMDS_33" | PERIOD=12 ns; # IO_L34P_GCLK19_0
 #NET "hdmi_in_n<3>" LOC="A9" | IOSTANDARD="TMDS_33"; # IO_L34N_GCLK18_0
-NET "hdmi_in_sclk" LOC="C1" | IOSTANDARD="LVTTL"; # IO_50P_M3WE_3
-NET "hdmi_in_sdat" LOC="B1" | IOSTANDARD="LVTTL"; # IO_50N_M3BA2_3
+# NET "hdmi_in_sclk" LOC="C1" | IOSTANDARD="LVTTL"; # IO_50P_M3WE_3
+# NET "hdmi_in_sdat" LOC="B1" | IOSTANDARD="LVTTL"; # IO_50N_M3BA2_3
