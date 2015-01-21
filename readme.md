@@ -14,13 +14,11 @@ sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript 
 
 [gerbers](http://artifacts.meatstand.com/papyrus/gerbers.zip)
 
-[schematic](http://artifacts.meatstand.com/papyrus/schematic.png)
+[schematic](http://artifacts.meatstand.com/papyrus/schematic.png) and [fpga schematic] (http://artifacts.meatstand.com/papyrus/papyrus.svg)
 
 [bitstream](http://artifacts.meatstand.com/papyrus/papyrus.bit)
 
 [![the board](http://artifacts.meatstand.com/papyrus/board.png)](http://artifacts.meatstand.com/papyrus/board.png)
-
-[![the fpga netlist](http://artifacts.meatstand.com/papyrus/papyrus.svg)](http://artifacts.meatstand.com/papyrus/papyrus.svg)
 
 
 spi flasher taken from https://svn.code.sf.net/p/xc3sprog/code revision 772 trunk
