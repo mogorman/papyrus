@@ -17,7 +17,7 @@ module top (
    assign led[1] = data1;
    assign blink = other_state;
    always @ (posedge clk50) begin
-      counter <= counter + 1;
+      counter <= counter + 4;
       other_counter <= other_counter + 1;
       state <= counter[26];
       other_state <= other_counter[26];

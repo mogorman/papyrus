@@ -1,3 +1,7 @@
-read_verilog papyrus.v
-show -colors 3 -format svg -prefix mine
-
+#!/bin/bash
+File_name="$1"
+Script_name=`basename ${File_name} .v`
+echo read_verilog ${File_name} >  ${Script_name}.script
+echo show -colors 3 -format svg -prefix ${Script_name} >> ${Script_name}.script
+yosys -s ${Script_name}.script
+rm ${Script_name}.dot

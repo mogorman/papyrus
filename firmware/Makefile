@@ -93,7 +93,7 @@ bit: trce
 	@cp $(BUILD_DIR)/$(PROJECT_NAME).bit .
 
 clean:
-	@rm -Rf $(BUILD_DIR)
+	@rm -rf $(BUILD_DIR)
 	@rm -f $(PROJECT_NAME).bit
 
 install:
@@ -118,4 +118,11 @@ erase: flasher
 	@echo "Make: Erase it"
 	@sudo xc3sprog -v -v -c ftdi "ise/spiflasher/spiflasher.bit"
 	@sudo xc3sprog  -v -v -c ftdi -I "ise/spiflasher/spiflasher.bit"
+photos:
+	@@mkdir -p $(BUILD_DIR)
+	@cd $(BUILD_DIR); \
+	for file in $$(find ../src -name "*.v"); do \
+		../ise/yosys.script "$$file"; \
+	done
+
 
