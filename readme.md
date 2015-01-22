@@ -1,4 +1,4 @@
-papyrus is an epaper based monitor.
+papyrus is an hdmi epaper based monitor.
 
 [![build status](http://ci.meatstand.com/projects/4/status.png?ref=master)](http://ci.meatstand.com/projects/4?ref=master)
 
