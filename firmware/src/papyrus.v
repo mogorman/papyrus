@@ -11,7 +11,7 @@ module top (
    reg [128:0] 		 other_counter;
    reg 			 state;
    reg 			 other_state;
-   reg [7:0] 		 i;
+   integer 		 i;
  		 
     
    assign led[0] = state;
@@ -24,6 +24,10 @@ module top (
       if( other_counter[28]  == 1 ) 
 	begin
 	   other_state <= other_counter[26];
+	   for (i=0; i< 128; i = i + 1)
+	     begin
+		other_counter[i] <= 0;
+	     end
 	end
    end
 
