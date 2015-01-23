@@ -22,3 +22,6 @@ sudo apt-get install geda-utils coreutils sed grep bash geda-gschem ghostscript 
 
 
 spi flasher taken from https://svn.code.sf.net/p/xc3sprog/code revision 772 trunk
+
+main: http://dev.meatstand.com/meatstand/papyrus
+mirror: https://github.com/mogorman/papyrus

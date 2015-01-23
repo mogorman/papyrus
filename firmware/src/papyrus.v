@@ -11,7 +11,8 @@ module top (
    reg [128:0] 		 other_counter;
    reg 			 state;
    reg 			 other_state;
-			 
+   reg [7:0] 		 i;
+ 		 
     
    assign led[0] = state;
    assign led[1] = data1;
@@ -20,7 +21,10 @@ module top (
       counter <= counter + 4;
       other_counter <= other_counter + 1;
       state <= counter[26];
-      other_state <= other_counter[26];
+      if( other_counter[28]  == 1 ) 
+	begin
+	   other_state <= other_counter[26];
+	end
    end
 
 endmodule
