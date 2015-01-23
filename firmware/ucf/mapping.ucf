@@ -17,7 +17,7 @@ NET "blink" LOC="T8"; # throw this line away
 # NET "LEDS<7>" LOC="P7";
 #
 # #
-# # HDMI output
+# # HDMI output J3
 # NET "hdmi_out_p<0>" LOC="C13" | IOSTANDARD="TMDS_33"; # IO_L63P_SCP7_0
 # NET "hdmi_out_n<0>" LOC="A13" | IOSTANDARD="TMDS_33"; # IO_L63N_SCP6_0
 # NET "hdmi_out_p<1>" LOC="B12" | IOSTANDARD="TMDS_33"; # IO_L62P_0
@@ -28,7 +28,7 @@ NET "blink" LOC="T8"; # throw this line away
 # NET "hdmi_out_n<3>" LOC="A14" | IOSTANDARD="TMDS_33"; # IO_L65N_SCP2_0
 # #
 # # 
-# # HDMI input
+# # HDMI input J2
 #NET "hdmi_in_p<0>" LOC="C7" | IOSTANDARD="TMDS_33"; # IO_L6P_0
 #NET "hdmi_in_n<0>" LOC="A7" | IOSTANDARD="TMDS_33"; # IO_L6N_0
 #NET "hdmi_in_p<1>" LOC="B6" | IOSTANDARD="TMDS_33"; # IO_L4P_0

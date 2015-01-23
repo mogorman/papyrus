@@ -1,4 +1,4 @@
-/*playing with verilog */
+/*playing with verilog J2 is the hdmi input port */
 
 module top (
 	    input 	 clk50,
