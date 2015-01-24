@@ -2404,9 +2404,8 @@ Layer(8 "signal3")
 )
 Layer(9 "silk")
 (
-	Text[2740.00mil 3020.00mil 2 100 "Papyrus" "clearline,onsolder"]
-	Text[2740.00mil 3090.00mil 2 100 "Rev @v@" "clearline,onsolder"]
-	Text[2740.00mil 3170.00mil 2 100 "Git: @git@" "clearline,onsolder"]
+	Text[2740.00mil 3090.00mil 2 100 "Papyrus" "clearline,onsolder"]
+	Text[2740.00mil 3170.00mil 2 100 "Rev @v@ Git: @git@" "clearline,onsolder"]
 	Text[2740.00mil 3250.00mil 2 100 "Copyright 2015" "clearline,onsolder"]
 	Text[2740.00mil 3410.00mil 2 100 "Tim Heath" "clearline,onsolder"]
 	Text[2740.00mil 3330.00mil 2 100 "Matt O'Gorman" "clearline,onsolder"]
@@ -2537,6 +2536,7 @@ Layer(10 "silk")
 	Text[2660.00mil 1920.00mil 0 100 "IC" "clearline"]
 	Text[2340.00mil 2440.00mil 0 100 "mast" "clearline"]
 	Text[2590.00mil 2440.00mil 0 100 "ianad" "clearline"]
+	Text[2160.00mil 1100.00mil 0 364 "Papyrus" "clearline"]
 )
 NetList()
 (
