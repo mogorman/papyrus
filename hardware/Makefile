@@ -1,6 +1,6 @@
 PCBNAME=papyrus
 AUTHOR="Matthew O'Gorman <mog@rldn.net>  , Tim Heath <crashcartpro@gmail.com>"
-REV=1.0
+#REV=1.0
 STACK=+
 SOLDERMASK=red
 SILKSCREEN=white
