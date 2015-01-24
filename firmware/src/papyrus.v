@@ -5,7 +5,7 @@ module top (
 	    output 	 blink
 );
 
-   reg 			 data1 = 1'b1;
+//   reg 			 data1 = 1'b1;
    reg [32:0] 		 counter;
    reg 			 state;
  		 
