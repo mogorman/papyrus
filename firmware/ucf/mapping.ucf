@@ -2,8 +2,29 @@
 
 VCCAUX = 3.3;
 
-NET "clk50" PERIOD = 31.25 ns | LOC = "J4"; # IO_L42N_GCLK24_M3LDM_3
+NET "clk50" LOC = "K3" | IOSTANDARD = LVCMOS33 | PERIOD = 50 MHz;
+
 NET "blink" LOC="T8"; # throw this line away
+
+
+## # HDMI Out (J3)
+#NET "TMDS_out_P(0)"  LOC = "C13" | IOSTANDARD = TMDS_33 ; # Blue
+#NET "TMDS_out_N(0)"  LOC = "A13" | IOSTANDARD = TMDS_33 ;
+#NET "TMDS_out_P(1)"  LOC = "B12" | IOSTANDARD = TMDS_33 ; # Red
+#NET "TMDS_out_N(1)"  LOC = "A12" | IOSTANDARD = TMDS_33 ;
+#NET "TMDS_out_P(2)"  LOC = "C11" | IOSTANDARD = TMDS_33 ; # Green
+#NET "TMDS_out_N(2)"  LOC = "A11" | IOSTANDARD = TMDS_33 ;
+#NET "TMDS_out_CLK_P" LOC = "B14" | IOSTANDARD = TMDS_33 ; # Clock
+#NET "TMDS_out_CLK_N" LOC = "A14" | IOSTANDARD = TMDS_33 ;
+#
+#NET "switch(1)"   LOC="L1" | IOSTANDARD=LVTTL | PULLUP;
+#NET "switch(2)"   LOC="L3" | IOSTANDARD=LVTTL | PULLUP;
+#NET "switch(3)"   LOC="L4" | IOSTANDARD=LVTTL | PULLUP;
+#NET "switch(4)"   LOC="L5" | IOSTANDARD=LVTTL | PULLUP;
+#
+#NET "leds(0)" LOC="P11" | IOSTANDARD=LVTTL;
+#NET "leds(1)" LOC="P7"  | IOSTANDARD=LVTTL;
+#
 
 # # Clocks
 # NET "CLK50" PERIOD = 20 ns | LOC = "K3";
@@ -17,7 +38,7 @@ NET "blink" LOC="T8"; # throw this line away
 # NET "LEDS<4>" LOC="T8"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=SLOW;
 # NET "LEDS<5>" LOC="N8"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=SLOW;
 # NET "LEDS<6>" LOC="P8"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=SLOW;
-# NET "LEDS<7>" LOC="P7"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=SLOW;
+# NET "LEDS<7>" LOC="P7"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=SLOW; 
 
 # # Flash
 # NET "FLASH_CS"   LOC="T3"  | IOSTANDARD=LVTTL;
