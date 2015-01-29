@@ -5,14 +5,17 @@ module top (
 	    output 	 blink
 );
 
-   reg [32:0] 		 counter;
+   integer 		 counter;
    reg 			 state;
- 		 
-    
+
+
    assign blink = state;
    always @ (posedge clk50) begin
       counter <= counter + 1;
-      state <= counter[26];
+     if (counter == 1024000)
+	state <= 1'b1;
+     else
+	state <= 1'b0;
    end
 
 endmodule
