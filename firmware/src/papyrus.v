@@ -13,13 +13,17 @@ module top (
    
 
    assign blink = state;
+
+   assign leds[5:0] = slow_counter[5:0];
    
+/* -----\/----- EXCLUDED -----\/-----
    assign leds[0] = slow_counter[0];
    assign leds[1] = slow_counter[1];
    assign leds[2] = slow_counter[2];
    assign leds[3] = slow_counter[3];
    assign leds[4] = slow_counter[4];
    assign leds[5] = slow_counter[5];
+ -----/\----- EXCLUDED -----/\----- */
    
    always @ (posedge clk50) begin
       counter <= counter + 1;
