@@ -9,7 +9,7 @@ module top (
 
    reg [31:0] 		 counter;
    reg 			 state;
-   reg [6:0] 		 slow_counter;
+   reg [5:0] 		 slow_counter;
    
 
    assign blink = state;
@@ -24,8 +24,8 @@ module top (
    always @ (posedge clk50) begin
       counter <= counter + 1;
       slow_counter <= counter[`mogtest] + slow_counter;
-      if (slow_counter[6] == 1) begin
-	 slow_counter[6] <= 0;
+      if (slow_counter == 31) begin
+	 slow_counter <= 0;
 	 if(state != 1'b0) begin
 	    state <= 1'b0;
 	 end
