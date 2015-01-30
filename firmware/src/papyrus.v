@@ -26,12 +26,16 @@ module top (
       slow_counter <= counter[`mogtest] + slow_counter;
       if (slow_counter == 31) begin
 	 slow_counter <= 0;
+	 state  <= ~state;
+	 
+/* -----\/----- EXCLUDED -----\/-----
 	 if(state != 1'b0) begin
 	    state <= 1'b0;
 	 end
 	 else begin
 	    state <= 1'b1;
 	 end
+ -----/\----- EXCLUDED -----/\----- */
       end
       
       if( counter[`mogtest] == 1)
