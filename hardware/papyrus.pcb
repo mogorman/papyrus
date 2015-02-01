@@ -2506,7 +2506,7 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
-	Text[2100.00mil 3370.00mil 0 100 "@hackvana_c@" "clearline"]
+	Text[2180.00mil 3380.00mil 0 100 "@hackvana_c@" "clearline"]
 	Text[2370.00mil 870.00mil 0 76 "Secret message" "clearline"]
 	Text[2660.00mil 1920.00mil 0 100 "IC" "clearline"]
 	Text[2340.00mil 2440.00mil 0 100 "mast" "clearline"]
