@@ -1,6 +1,6 @@
 /*playing with verilog J2 is the hdmi input port */
 
-`define mogtest 24
+`define mogtest 23
 module top (
 	    input 	 clk50,
 	    output 	 blink,
