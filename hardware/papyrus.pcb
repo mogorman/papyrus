@@ -1508,7 +1508,7 @@ Element["" "SO8" "U2" "unknown" 2675.00mil 2472.50mil -62.50mil -217.50mil 0 100
 
 	)
 
-Element["" "0805" "R8" "10k" 70.9821mm 2200.00mil -166.15mil -31.50mil 0 100 ""]
+Element["" "0805" "R8" "10k" 70.9821mm 2200.00mil -146.15mil -31.50mil 0 100 ""]
 (
 	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
 	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
