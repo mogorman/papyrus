@@ -19,8 +19,7 @@ module top (
    always @ (posedge clk50) begin
       counter <= counter + 1;
       slow_counter <= counter[`mogtest] + slow_counter;
-      if (slow_counter == 31) begin
-	 slow_counter <= 0;
+      if (slow_counter == 0) begin
 	 state  <= ~state;
       end
       
