@@ -26,3 +26,5 @@ spi flasher taken from https://svn.code.sf.net/p/xc3sprog/code revision 772 trun
 main: http://dev.meatstand.com/meatstand/papyrus
 
 mirror: https://github.com/mogorman/papyrus
+
+I got the +20v and +15v working but not the -15v or -22v
