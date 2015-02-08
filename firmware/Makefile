@@ -98,7 +98,7 @@ clean:
 
 install:
 	@echo "Make: Install"
-	sudo xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
+	@xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
 
 flasher:
 	@if [ ! -f ise/spiflasher/spiflasher.bit ] ; \
@@ -110,14 +110,14 @@ flasher:
 
 flash: flasher
 	@echo "Make: Install to flash"
-	@sudo xc3sprog -v -v -c ftdi "ise/spiflasher/spiflasher.bit"
-	@sudo xc3sprog  -v -v -c ftdi -I "$(PROJECT_NAME).bit"
-	@sudo xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
+	@xc3sprog -v -v -c ftdi "ise/spiflasher/spiflasher.bit"
+	@xc3sprog  -v -v -c ftdi -I "$(PROJECT_NAME).bit"
+	@xc3sprog  -v -v -c ftdi "$(PROJECT_NAME).bit"
 
 erase: flasher
 	@echo "Make: Erase it"
-	@sudo xc3sprog -v -v -c ftdi "ise/spiflasher/spiflasher.bit"
-	@sudo xc3sprog  -v -v -c ftdi -I "ise/spiflasher/spiflasher.bit"
+	@xc3sprog -v -v -c ftdi "ise/spiflasher/spiflasher.bit"
+	@xc3sprog  -v -v -c ftdi -I "ise/spiflasher/spiflasher.bit"
 photos:
 	@@mkdir -p $(BUILD_DIR)
 	@cd $(BUILD_DIR); \
