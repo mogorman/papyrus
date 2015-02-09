@@ -30,3 +30,4 @@ mirror: https://github.com/mogorman/papyrus
 I got the +20v and +15v working but not the -15v or -22v.  I need to figure out what is wrong with using part without diodes.
 
 working on lm32 core into project
+i got latticemico32 system built working on porting it.
