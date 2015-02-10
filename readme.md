@@ -31,3 +31,4 @@ I got the +20v and +15v working but not the -15v or -22v.  I need to figure out 
 
 working on lm32 core into project
 i got latticemico32 system built working on porting it.
+I should have core in here this week.  I got it built in lattice moving it to xilinx
