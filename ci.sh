@@ -45,7 +45,7 @@ if [ "$New_schematic" == "0" ]; then
 else
     copy_files schematic.png ~/artifacts/papyrus/schematic.png
 fi
-cd ../firmware
+cd ../gateware
 make
 make photos
 New_FPGA=`git diff HEAD^ HEAD -- src/ ucf/ | wc -l`
