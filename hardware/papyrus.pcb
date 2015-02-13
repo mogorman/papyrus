@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["papyrus" 6000.00mil 5000.00mil]
 
-Grid[1000.000000 0.0000 0.0000 0]
+Grid[1500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 6.00mil 6.00mil 6.00mil 13.00mil 7.00mil]
@@ -1220,7 +1220,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[36.00mil 30.00mil 36.00mil 26.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "10.00mil")
+Attribute("PCB::grid::size" "15.00mil")
 Via[3150.00mil 900.00mil 28.00mil 110.00mil 132.00mil 130.00mil "" "hole"]
 Via[1950.00mil 900.00mil 28.00mil 110.00mil 132.00mil 130.00mil "" "hole"]
 Via[1950.00mil 3350.00mil 28.00mil 110.00mil 132.00mil 130.00mil "" "hole"]
@@ -2386,6 +2386,12 @@ Layer(8 "signal3")
 )
 Layer(9 "silk")
 (
+	Line[2985.00mil 925.00mil 2865.00mil 925.00mil 10.00mil 20.00mil "clearline"]
+	Line[2985.00mil 980.00mil 2865.00mil 980.00mil 10.00mil 20.00mil "clearline"]
+	Line[69.8200mm 24.3164mm 66.7720mm 24.3164mm 10.00mil 20.00mil "clearline"]
+	Arc[70.8861mm 952.10mil 42.90mil 42.90mil 10.00mil 20.00mil 90 -90 "clearline"]
+	Arc[70.8929mm 24.3322mm 42.90mil 42.90mil 10.00mil 20.00mil 0 -90 "clearline"]
+	Text[69.3991mm 22.4241mm 2 100 "gEDA" "clearline,onsolder"]
 	Text[2740.00mil 3090.00mil 2 100 "Papyrus" "clearline,onsolder"]
 	Text[2740.00mil 3170.00mil 2 100 "Rev @v@ Git: @git@" "clearline,onsolder"]
 	Text[2740.00mil 3250.00mil 2 100 "Copyright 2015" "clearline,onsolder"]
@@ -2435,6 +2441,9 @@ Layer(9 "silk")
 	Text[2690.00mil 1590.00mil 2 100 "This board is" "clearline,onsolder"]
 	Text[2720.00mil 1710.00mil 2 100 "CC-BY-SA 4.0" "clearline,onsolder"]
 	Text[2620.00mil 1650.00mil 2 100 "licensed" "clearline,onsolder"]
+	Text[2985.00mil 800.00mil 2 100 "Made with:" "clearline,onsolder"]
+	Text[75.7964mm 21.8966mm 2 100 "GPL" "clearline,onsolder"]
+	Text[2980.00mil 985.00mil 2 100 "EDA" "clearline,onsolder"]
 	Polygon("clearpoly")
 	(
 		[64.5190mm 63.9359mm] [64.5907mm 64.0405mm] [64.1650mm 63.9923mm] [63.5546mm 63.8670mm] [63.0763mm 63.7443mm] 
@@ -2509,6 +2518,22 @@ Layer(9 "silk")
 		[68.9219mm 61.8399mm] [68.8929mm 61.9034mm] [68.5665mm 62.3359mm] [68.5279mm 2459.60mil] [68.5637mm 62.5041mm] 
 		[68.4576mm 62.6102mm] [2692.30mil 62.5826mm] [68.2813mm 2455.80mil] [68.2645mm 62.1622mm] [68.0702mm 62.0535mm] 
 		[67.4337mm 62.1693mm] [67.2325mm 62.2752mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[2870.00mil 910.00mil] [2790.00mil 910.00mil] [2790.00mil 1000.00mil] [2870.00mil 1000.00mil] 
+	)
+	Polygon("clearpoly")
+	(
+		[70.8868mm 25.1882mm] [70.3910mm 25.1882mm] [70.3910mm 23.3594mm] [70.8868mm 23.3594mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[2773.60mil 23.4843mm] [70.1911mm 23.4843mm] [70.1911mm 25.0424mm] [2773.60mil 25.0424mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[69.9079mm 24.8549mm] [70.4162mm 24.8549mm] [70.4162mm 931.63mil] [69.9079mm 931.63mil] 
 	)
 )
 Layer(10 "silk")
