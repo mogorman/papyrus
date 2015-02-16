@@ -33,3 +33,5 @@ working on lm32 core into project
 i got latticemico32 system built working on porting it.
 I should have core in here this week.  I got it built in lattice moving it to xilinx.
 built in xilinx and with misoc tools.  now to write C code
+cant get bios going like i want.
+started work on pcb printer
