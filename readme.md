@@ -35,3 +35,4 @@ I should have core in here this week.  I got it built in lattice moving it to xi
 built in xilinx and with misoc tools.  now to write C code
 cant get bios going like i want.
 started work on pcb printer
+disassembled printer ready for moving forward
