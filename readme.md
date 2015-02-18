@@ -36,3 +36,4 @@ built in xilinx and with misoc tools.  now to write C code
 cant get bios going like i want.
 started work on pcb printer
 disassembled printer ready for moving forward
+made cuts and mostly reassembled.  I need to cut metal and program the mcu
