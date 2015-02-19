@@ -37,3 +37,6 @@ cant get bios going like i want.
 started work on pcb printer
 disassembled printer ready for moving forward
 made cuts and mostly reassembled.  I need to cut metal and program the mcu
+finished all mechanical parts nad put chasis back on printer.
+I need to test electrical and then install mcu to drive printer.
+then im ready for test prints
