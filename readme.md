@@ -39,4 +39,5 @@ disassembled printer ready for moving forward
 made cuts and mostly reassembled.  I need to cut metal and program the mcu
 finished all mechanical parts nad put chasis back on printer.
 I need to test electrical and then install mcu to drive printer.
-then im ready for test prints
+then im ready for test prints.
+wired in electonics turned on printer verified it wasnt broken.
