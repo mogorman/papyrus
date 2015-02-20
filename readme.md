@@ -41,3 +41,4 @@ finished all mechanical parts nad put chasis back on printer.
 I need to test electrical and then install mcu to drive printer.
 then im ready for test prints.
 wired in electonics turned on printer verified it wasnt broken.
+Could not get printer to print.  Constantly just fed page through.
