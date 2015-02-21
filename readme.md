@@ -42,3 +42,5 @@ I need to test electrical and then install mcu to drive printer.
 then im ready for test prints.
 wired in electonics turned on printer verified it wasnt broken.
 Could not get printer to print.  Constantly just fed page through.
+Playing with mcu code I was able to get the printer to print its error message onto the aluminum carrier
+it seemed to work just fine.  Now I need to solve the timing issues.  Going to try his code on a tiny.
