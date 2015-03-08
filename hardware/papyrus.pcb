@@ -2192,6 +2192,7 @@ Layer(1 "component")
 	Line[2850.00mil 2070.00mil 2855.00mil 2070.00mil 8.00mil 16.00mil "clearline"]
 	Line[3075.00mil 2470.00mil 3075.00mil 2295.00mil 8.00mil 16.00mil "clearline"]
 	Line[3075.00mil 2295.00mil 2850.00mil 2070.00mil 8.00mil 16.00mil "clearline"]
+	Text[2160.00mil 3380.00mil 0 100 "Papyrus" "clearline"]
 	Polygon("clearpoly,lock")
 	(
 		[45.6761mm 19.0499mm] [83.7761mm 19.0499mm] [83.7761mm 88.8997mm] [45.6761mm 88.8997mm] 
@@ -2722,7 +2723,7 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
-	Text[2180.00mil 3380.00mil 0 100 "@hackvana_c@" "clearline"]
+	Text[2460.00mil 3390.00mil 0 100 "@hackvana_c@" "clearline"]
 	Text[2370.00mil 870.00mil 0 76 "Secret message" "clearline"]
 	Text[2660.00mil 1920.00mil 0 100 "IC" "clearline"]
 	Text[2340.00mil 2440.00mil 0 100 "mast" "clearline"]
