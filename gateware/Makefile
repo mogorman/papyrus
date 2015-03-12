@@ -8,7 +8,7 @@ ifeq "$(wildcard ./misoc/build )" ""
 	@make
 else
 	cd misoc; PYTHONPATH=":../migen/" ./make.py -X ../blinkie -t blinkie -p minispartan6 clean build-bitstream
-	cp misoc/build/*.bit ./
+	cp misoc/build/*.bit ./blinkie.bit
 endif
 clean:
-	rm -rf misoc/build/*
+	rm -rf misoc/build/* blinkie.bit
