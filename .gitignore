@@ -13,3 +13,4 @@ hardware/board.png
 hardware/schematic.pdf
 hardware/schematic.png
 hardware/local_gerbers
+*__pycache__
