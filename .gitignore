@@ -1,7 +1,7 @@
 gateware/build
 gateware/*.bit
-gateware/ise/spiflasher/build/
-gateware/ise/spiflasher/spiflasher.bit
+gateware/spiflasher/build/
+gateware/spiflasher/spiflasher.bit
 hardware/*.zip
 hardware/*.pcb-*
 hardware/gerbers
