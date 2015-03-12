@@ -6,8 +6,9 @@ ifeq "$(wildcard ./misoc/build )" ""
 	../update_submodule.sh
 	@echo "I got my dependencies I am ready to go"
 	@make
-endif
-	cd misoc; PYTHONPATH=":../migen/" ./make.py -X ../blinkie -t blinkie -p minispartan6 all
+else
+	cd misoc; PYTHONPATH=":../migen/" ./make.py -X ../blinkie -t blinkie -p minispartan6 clean build-bitstream
 	cp misoc/build/*.bit ./
+endif
 clean:
 	rm -rf misoc/build/*
