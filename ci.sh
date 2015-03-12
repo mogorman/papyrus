@@ -45,18 +45,18 @@ if [ "$New_schematic" == "0" ]; then
 else
     copy_files schematic.png ~/artifacts/papyrus/schematic.png
 fi
-cd ../gateware
-make
-make photos
-New_FPGA=`git diff HEAD^ HEAD -- src/ ucf/ | wc -l`
-if [ "$New_FPGA" == "0" ]; then
-    echo "No changes to VHDL don't bother saving the Bitstream."
-else
-    copy_files papyrus.bit ~/artifacts/papyrus/papyrus.bit
-    cp build/papyrus.svg ./
-    copy_files papyrus.svg ~/artifacts/papyrus/papyrus.svg
-fi
-
+#cd ../gateware
+#make
+#make photos
+#New_FPGA=`git diff HEAD^ HEAD -- src/ ucf/ | wc -l`
+#if [ "$New_FPGA" == "0" ]; then
+#    echo "No changes to VHDL don't bother saving the Bitstream."
+#else
+#    copy_files papyrus.bit ~/artifacts/papyrus/papyrus.bit
+#    cp build/papyrus.svg ./
+#    copy_files papyrus.svg ~/artifacts/papyrus/papyrus.svg
+#fi
+#
 
 cd ~/
 rsync -Pav ./artifacts rldn.net:~/
