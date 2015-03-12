@@ -1,0 +1,56 @@
+                __  ___  _   ____     _____
+               /  |/  / (_) / __/__  / ___/
+              / /|_/ / / / _\ \/ _ \/ /__
+             /_/  /_/ /_/ /___/\___/\___/
+
+a high performance and small footprint SoC based on Migen
+
+
+This package is a simple example of how to build a customized SoC with MiSoC. It
+takes a simple MiSoC base design and adds a core that blinks a LED at a
+frequency controllable from the CPU via a CSR. This package also contains
+example software to control the frequency from the serial console.
+
+It can be run on the Papilio Pro, a small entry-level Spartan-6 LX9 board.
+
+[> Getting started
+------------------
+1. Obtain MiSoC and follow its "Quick start guide". Set the MSCDIR environment
+  variable to the MiSoC directory.
+
+2. Run from MiSoC:
+  ./make.py -X /path_to/blinkie -t blinkie all
+  This will build and flash our SoC design, plus the MiSoC BIOS.
+
+3. Build and flash the demo software:
+  cd software
+  make flash
+  Alternatively, the demo software can be loaded through the serial port using
+  flterm, by using "make load". The default serial device is /dev/ttyUSB1.
+
+4. Reboot the board (press the reconfiguration button on the Papilio Pro) and
+  open a serial terminal program at 115200 8-N-1. As an alternative to
+  rebooting the board, load the bitstream with "./make.py -X /path_to/blinkie
+  -t blinkie load-bitstream" in MiSoC.
+
+5. The BIOS and the demo software should load. Press 0-9 to set the LED
+  blinking frequency.
+
+[> How to use Mixxeo and Milkymist One
+--------------------------------------
+This example also works with Mixxeo and M1.
+In targets/blinkie.py, replace "targets.ppro" with "targets.mlabs_video".
+In software/Makefile, set BOARD to "mixxeo" or "m1" - you probably need to
+change the serial port too.
+
+Building for Mixxeo is with the same command:
+  ./make.py -X /path_to/blinkie -t blinkie all
+Add "-p m1" to build for Milkymist One:
+  ./make.py -X /path_to/blinkie -t blinkie -p m1 all
+
+[> Known problems
+-----------------
+The "load-bitstream" target does not work reliably on the Papilio Pro, due to a
+bug that seems related to xc3sprog. You can load the bitstream using UrJTAG
+instead, which does not cause the problem, or write the bitstream to the flash
+everytime.
