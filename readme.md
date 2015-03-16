@@ -51,3 +51,4 @@ have new pcb printer working and printed spam seeing if it will work soon.
 Working on updating gateware now.
 almost ready to add submodules and redo makefile
 built base for my etching station
+ran etch station all night no problems
