@@ -104,10 +104,13 @@ class Platform(XilinxISEPlatform):
 			lambda p: SimpleCRG(p, "clk50", None), _connectors)
 
 	def create_programmer(self):
-		return XC3SProg("minispartan6", "bscan_spi_minispartan6.bit")
+		programmer = XC3SProg("minispartan6", "spiflasher.bit")
+		programmer.set_flash_proxy_dir("../spiflasher/")
+		return programmer
 
 	def do_finalize(self, fragment):
 		try:
 			self.add_period_constraint(self.lookup_request("50"), 50)
 		except ConstraintError:
 			pass
+
