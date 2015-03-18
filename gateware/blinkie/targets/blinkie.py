@@ -27,6 +27,6 @@ class BlinkieSoC(BaseSoC):
 
 	def __init__(self, platform, **kwargs):
 		BaseSoC.__init__(self, platform, **kwargs)
-		self.submodules.blinker = Blinker(platform.request("user_led",6))
+		self.submodules.blinker = Blinker(platform.request("user_led",0))
 
 default_subtarget = BlinkieSoC
