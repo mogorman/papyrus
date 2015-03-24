@@ -52,3 +52,4 @@ Working on updating gateware now.
 almost ready to add submodules and redo makefile
 built base for my etching station
 ran etch station all night no problems
+got heater and made a holder for it.
